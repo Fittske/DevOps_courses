@@ -1,2 +1,3 @@
-# Put header here
-Put description here
+# Vagrant. Практические задания
+
+В данном разделе приведено решение задач с использование Vagrant.
