@@ -1,0 +1,81 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    - MyMessage: "Task for ITransition! Welcome!"
+  tasks:
+    - name: Update
+      apt:
+        upgrade: 'yes'
+
+    - name: Create user
+      become: true
+      ansible.builtin.user:
+        name: devops
+        uid: 1077
+        group: vagrant
+        state: present
+        createhome: true
+
+    - name: Create .ssh folder
+      file:
+        path: ~devops/.ssh
+        state: directory
+        owner: devops
+        group: vagrant
+        mode: 0700
+
+    - name: Set authorized key taken from file
+      ansible.posix.authorized_key:
+        user: devops
+        state: present
+        key: "{{ lookup('file', '/home/ruslan/IT-2023/task_2/task_2.3/ansible_user/.ssh/id_rsa.pub') }}"
+
+    - name: Install nginx web server
+      apt:
+        pkg: nginx
+        state: latest
+
+    - name: Copy nginx config file
+      copy:
+        src: ./nginx/nginx.conf
+        dest: /etc/nginx/sites-available/default
+
+    - name: Nginx configuration
+      template:
+        src: ./nginx/index.html.j2
+        dest: /usr/share/nginx/html/index.html
+
+    - name: restart nginx
+      service:
+        name: nginx
+        state: restarted
+
+    - name: Create file with creation time
+      file:
+        path: ~vagrant/file_{{ ansible_date_time.date }}.txt
+        state: touch
+        owner: vagrant
+        group: vagrant
+        mode: 0700
+
+    - name: Install postgresql
+      apt:
+        pkg: postgresql
+        state: present
+
+    - name: Start postgresql
+      service:
+        name: postgresql
+        state: started
+
+    - name: Setup CRON job for cleaning temp files
+      ansible.builtin.cron:
+        name: "Clean temp every 5 minutes"
+        minute: "5"
+        weekday: "*"
+        hour: "*"
+        job: "rm -r /tmp/*"
+        user: root
+        cron_file: clean.cron
+
