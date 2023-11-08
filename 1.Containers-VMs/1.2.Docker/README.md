@@ -1,2 +1,2 @@
-# Put header here
-Put description here
+# Docker. Практические задания
+В данном разделе приведено решение задач с использование Docker и Docker-compose.
