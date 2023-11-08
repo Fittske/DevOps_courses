@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx:/usr/share/nginx/html
+    restart: always
+  postgresql:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=itransition
+      - POSTGRES_USER=itransition
+    restart: always
