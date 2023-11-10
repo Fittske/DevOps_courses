@@ -1,2 +1,2 @@
 # Minikube и Kubernetes. Практические задания
-Put description here
+В данном разделе приведено решение задач с использование Minikube и k8s.
