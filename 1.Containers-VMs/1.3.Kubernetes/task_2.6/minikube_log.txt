@@ -1,0 +1,286 @@
+Script started on 2023-11-08 23:48:49+05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="211" LINES="51"]
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ exitminikube stopexit[K[Kexitminikube stopexit[K
+[?2004lexit
+
+Script done on 2023-11-08 23:48:54+05:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2023-11-08 23:52:52+05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="211" LINES="51"]
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ minikube start
+[?2004l😄  minikube v1.31.2 на Ubuntu 22.04
+✨  Используется драйвер docker на основе существующего профиля
+👍  Запускается control plane узел minikube в кластере minikube
+🚜  Скачивается базовый образ ...
+🔄  Перезагружается существующий docker container для "minikube" ...
+🐳  Подготавливается Kubernetes v1.27.4 на Docker 24.0.4 ...| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K
+🔗  Configuring bridge CNI (Container Networking Interface) ...
+🔎  Компоненты Kubernetes проверяются ...
+    ▪ Используется образ gcr.io/k8s-minikube/storage-provisioner:v5
+🌟  Включенные дополнения: storage-provisioner, default-storageclass
+🏄  Готово! kubectl настроен для использования кластера "minikube" и "default" пространства имён по умолчанию
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ [7mkubectl create -f my-pod.yaml[27mkubectl create -f my-pod.yaml
+[?2004lpod/webapp created
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ [7mkubectl get pods[27mkubectl get pods
+[?2004lNAME     READY   STATUS              RESTARTS   AGE
+webapp   0/1     ContainerCreating   0          6s
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ kubectl get pods
+[?2004lNAME     READY   STATUS              RESTARTS   AGE
+webapp   0/1     ContainerCreating   0          14s
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ kubectl get pods
+[?2004lNAME     READY   STATUS    RESTARTS   AGE
+webapp   1/1     Running   0          21s
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ kubectl get podscreate -f my-pod.yaml[13Pget pods[K[K[K[Ksev[Krvices
+[?2004lNAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   10m
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ [7mkubectl describe pod <имя пода>[27mkubectl describe pod <имя пода>[C[K[K[K[K[K[K[K[K[K[Kwebapp
+[?2004lName:             webapp
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Wed, 08 Nov 2023 23:53:38 +0500
+Labels:           <none>
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.14
+IPs:
+  IP:  10.244.0.14
+Containers:
+  webapp:
+    Container ID:   docker://6acc2beadbec750e7809f8a4ffd458f342264a45a32d98a1c662e8864b359bdc
+    Image:          karthequian/helloworld:latest
+    Image ID:       docker-pullable://karthequian/helloworld@sha256:48413fdddeae11e4732896e49b6d82979847955666ed95e4d6e57b433920c9e1
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Wed, 08 Nov 2023 23:53:52 +0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-phcd5 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-phcd5:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  89s   default-scheduler  Successfully assigned default/webapp to minikube
+  Normal  Pulling    89s   kubelet            Pulling image "karthequian/helloworld:latest"
+  Normal  Pulled     75s   kubelet            Successfully pulled image "karthequian/helloworld:latest" in 13.602070475s (13.602085037s including waiting)
+  Normal  Created    75s   kubelet            Created container webapp
+  Normal  Started    75s   kubelet            Started container webapp
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ [7mkubectl logs <имя пода>[27mkubectl logs <имя пода>[C[K[K[K[K[K[K[K[K[K[Kwebapp
+[?2004l[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ [7mkubectl exec -it <имя пода> --[27m
+[7m/bin/bash[27m[A]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ kubectl exec -it <имя пода> --
+/bin/bash[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/bin/bash
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[Ksh[C[1P --/bin/sh[1P --/bin/sh[1P --/bin/sh[1P --/bin/sh[1P --/bin/sh[1P--/bin/sh[1P --/bin/sh[1P --/bin/sh[1P --/bin/sh[1P --/bin/shw --/bin/she --/bin/shb --/bin/sha --/bin/shp --/bin/shp --/bin/sh
+[?2004lerror: unknown flag: --/bin/sh
+See 'kubectl exec --help' for usage.
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ kubectl exec -it webapp --/bin/sh[K[Kbash
+[?2004lerror: unknown flag: --/bin/bash
+See 'kubectl exec --help' for usage.
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ kubectl exec -it webapp --/bin/bash[1Pbash[1Pbash[1Pbash[1Pash[1Pbash
+[?2004lerror: unknown flag: --bash
+See 'kubectl exec --help' for usage.
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ kubectl exec -it webapp --bash/bin/bash[2Psh[14Plogs webapp[8@describe pod[C[C[C[C[C[C[C[7Pget services[4Ppods
+[?2004lNAME     READY   STATUS    RESTARTS   AGE
+webapp   1/1     Running   0          6m59s
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ kubectl get podsexec -it webapp --bash[K[K[K[K /bin/s[Kbash
+[?2004l]0;root@webapp: /root@webapp:/# ll
+total 76
+drwxr-xr-x   1 root root 4096 Nov  8 18:53 [0m[01;34m.[0m/
+drwxr-xr-x   1 root root 4096 Nov  8 18:53 [01;34m..[0m/
+-rwxr-xr-x   1 root root    0 Nov  8 18:53 [01;32m.dockerenv[0m*
+lrwxrwxrwx   1 root root    7 Jan 19  2021 [01;36mbin[0m -> [01;34musr/bin[0m/
+drwxr-xr-x   2 root root 4096 Apr 15  2020 [01;34mboot[0m/
+drwxr-xr-x   5 root root  360 Nov  8 18:53 [01;34mdev[0m/
+drwxr-xr-x   1 root root 4096 Nov  8 18:53 [01;34metc[0m/
+drwxr-xr-x   2 root root 4096 Apr 15  2020 [01;34mhome[0m/
+lrwxrwxrwx   1 root root    7 Jan 19  2021 [01;36mlib[0m -> [01;34musr/lib[0m/
+lrwxrwxrwx   1 root root    9 Jan 19  2021 [01;36mlib32[0m -> [01;34musr/lib32[0m/
+lrwxrwxrwx   1 root root    9 Jan 19  2021 [01;36mlib64[0m -> [01;34musr/lib64[0m/
+lrwxrwxrwx   1 root root   10 Jan 19  2021 [01;36mlibx32[0m -> [01;34musr/libx32[0m/
+drwxr-xr-x   2 root root 4096 Jan 19  2021 [01;34mmedia[0m/
+drwxr-xr-x   2 root root 4096 Jan 19  2021 [01;34mmnt[0m/
+drwxr-xr-x   2 root root 4096 Jan 19  2021 [01;34mopt[0m/
+dr-xr-xr-x 495 root root    0 Nov  8 18:53 [01;34mproc[0m/
+drwx------   2 root root 4096 Jan 19  2021 [01;34mroot[0m/
+drwxr-xr-x   1 root root 4096 Nov  8 18:53 [01;34mrun[0m/
+-rwxr-xr-x   1 root root  141 Jan 24  2021 [01;32mrunner.sh[0m*
+lrwxrwxrwx   1 root root    8 Jan 19  2021 [01;36msbin[0m -> [01;34musr/sbin[0m/
+drwxr-xr-x   2 root root 4096 Jan 19  2021 [01;34msrv[0m/
+dr-xr-xr-x  13 root root    0 Nov  8 18:53 [01;34msys[0m/
+drwxrwxrwt   1 root root 4096 Jan 24  2021 [30;42mtmp[0m/
+drwxr-xr-x   1 root root 4096 Jan 19  2021 [01;34musr[0m/
+drwxr-xr-x   1 root root 4096 Jan 24  2021 [01;34mvar[0m/
+drwxr-xr-x   1 root root 4096 Jan 24  2021 [01;34mwww[0m/
+]0;root@webapp: /root@webapp:/# cat runner.h sh
+#!/bin/sh
+
+# Replace the hostname in the container
+sed -i.bak 's/HOSTNAME/'"$HOSTNAME"'/g' /www/data/index.html
+
+# Startup the cmd
+exec "$@"
+]0;root@webapp: /root@webapp:/# ^C
+]0;root@webapp: /root@webapp:/# exit
+command terminated with exit code 130
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ kubectl exec -it webapp -- /bin/bash
+[?2004l]0;root@webapp: /root@webapp:/# curl 10.244.0.14
+bash: curl: command not found
+]0;root@webapp: /root@webapp:/# curl localhost
+bash: curl: command not found
+]0;root@webapp: /root@webapp:/# exit
+command terminated with exit code 127
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ [7mcurl localhost[27mkubectl exec -it webapp -- /bin/bash[22Pcurl localhostkubectl exec -it webapp -- /bin/bash[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kminikube ssh
+[?2004l[?2004h]0;docker@minikube: ~docker@minikube:~$ [7mcurl localhost[27mcurl localhost
+[?2004lcurl: (7) Failed to connect to localhost port 80 after 0 ms: Connection refused
+[?2004h]0;docker@minikube: ~docker@minikube:~$ [7mcurl 10.244.0.14[27mcurl 10.244.0.14
+[?2004l<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A simple docker helloworld example.">
+    <meta name="author" content="Karthik Gaekwad">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script type="text/javascript">
+function init ( )
+{
+  timeDisplay = document.createTextNode ( "" );
+  document.getElementById("clock").appendChild ( timeDisplay );
+}
+
+function updateVisit ()
+{
+  visitDisplay = document.createTextNode ( "" );
+  document.getElementById("visits").appendChild(visitDisplay);
+
+  var counter = Cookies.get('counter');
+  if (counter==null){
+  console.log(counter);
+  	counter = 1;
+  }else{
+  	counter = Number(counter) + 1;
+  }
+  Cookies.set('counter', counter);
+  document.getElementById("visits").firstChild.nodeValue = counter;
+}
+
+function updateClock ()
+{
+  var currentTime = new Date ( );
+
+  var currentHours = currentTime.getHours ( );
+  var currentMinutes = currentTime.getMinutes ( );
+  var currentSeconds = currentTime.getSeconds ( );
+
+  // Pad the minutes and seconds with leading zeros, if required
+  currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+  currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+
+  // Choose either "AM" or "PM" as appropriate
+  var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+
+  // Convert the hours component to 12-hour format if needed
+  currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+
+  // Convert an hours component of "0" to "12"
+  currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+
+  // Compose the string for display
+  var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+
+  // Update the time display
+  document.getElementById("clock").firstChild.nodeValue = currentTimeString;
+}
+</script>
+</head>
+<body  onload="updateVisit(); updateClock(); setInterval('updateClock()', 1000 )">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Docker Helloworld</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="https://github.com/karthequian/docker-helloworld">About</a></li>
+            <li><a href="https://twitter.com/iteration1">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Hello</h1>
+        <p>Is it me you're looking for?</p>
+      </div>
+      <hr/>
+      <div class="footer">
+        <p>2021 Karthik Gaekwad,&nbsp;Visits:&nbsp;<span id="visits">&nbsp;</span>,&nbsp;&nbsp;<span id="clock">&nbsp;</span></p>
+        <div title="The container ID is the ID of the container (or host) that is the helloworld application.">Container ID: webapp
+        </div>
+      </div>
+    </div> <!-- /container -->
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.1/js.cookie.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>
+[?2004h]0;docker@minikube: ~docker@minikube:~$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;docker@minikube: ~docker@minikube:~$ [?2004l
+logout
+ssh: Process exited with status 130
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ [7mkubectl logs <имя пода>[27mkubectl logs <имя пода>[C[K[K[K[K[K[K[K[K[K[Kwebapp
+[?2004l10.244.0.1 - - [08/Nov/2023:19:06:38 +0000] "GET / HTTP/1.1" 200 4363 "-" "curl/7.81.0"
+10.244.0.1 - - [08/Nov/2023:19:06:38 +0000] "GET / HTTP/1.1" 200 4363 "-" "curl/7.81.0"
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ [7mkubectl delete pod <имя пода>[27mkubectl delete pod <имя пода>[C[K[K[K[K[K[K[K[K[K[Kwebapp
+[?2004lpod "webapp" deleted
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ kubectl delete pod webapp[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kget pods
+[?2004lNo resources found in default namespace.
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ kubectl get pods[K[K[K[Ksere[Kvices
+[?2004lNAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   24m
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ [7mkubectl delete service <имя[27m
+[7mсервиса>[27m[A]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ kubectl delete service <имя
+сервиса>[C[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K b[Kkubernetes
+[?2004lservice "kubernetes" deleted
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ kubectl delete service kubernetes[13Pget services
+[?2004lNo resources found in default namespace.
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ [7mminikube stop[27mminikube stop
+[?2004l✋  Узел "minikube" останавливается ...
+🛑  Выключается "minikube" через SSH ...
+🛑  Остановлено узлов: 1.
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.6[01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.6[00m$ exit
+[?2004lexit
+
+Script done on 2023-11-09 00:09:39+05:00 [COMMAND_EXIT_CODE="0"]
