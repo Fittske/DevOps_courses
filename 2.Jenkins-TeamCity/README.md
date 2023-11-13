@@ -1,2 +1,4 @@
-# Put header here
-Put description here
+# Jenkins. Практические задания
+В данном разделе приведено решение задач с использование Jenkins.
+
+Ссылка на репозиторий с используемым приложением - https://github.com/Fittske/flask-hello-world
