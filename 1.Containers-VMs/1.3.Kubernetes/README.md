@@ -1,2 +1,2 @@
-# Put header here
-Put description here
+# Minikube и Kubernetes. Практические задания
+В данном разделе приведено решение задач с использование Minikube и k8s.
