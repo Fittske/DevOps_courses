@@ -403,7 +403,28 @@ Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 nginx all 1.18.
 Preconfiguring packages ...
 Fetched 2437 kB in 1s (1849 kB/s)
 Selecting previously unselected package fonts-dejavu-core.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 63743 files and directories currently installed.)
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 63743 files and directories currently installed.)
 Preparing to unpack .../00-fonts-dejavu-core_2.37-1_all.deb ...
 Unpacking fonts-dejavu-core (2.37-1) ...
 Selecting previously unselected package fontconfig-config.
@@ -1003,7 +1024,28 @@ Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 sysstat amd64 1
 Preconfiguring packages ...
 Fetched 30.7 MB in 5s (6439 kB/s)
 Selecting previously unselected package libllvm10:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 63970 files and directories currently installed.)
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 63970 files and directories currently installed.)
 Preparing to unpack .../00-libllvm10_1%3a10.0.0-4ubuntu1_amd64.deb ...
 Unpacking libllvm10:amd64 (1:10.0.0-4ubuntu1) ...
 Selecting previously unselected package libpq5:amd64.

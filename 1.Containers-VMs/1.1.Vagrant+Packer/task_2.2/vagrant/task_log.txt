@@ -1,0 +1,1270 @@
+Script started on 2023-10-28 20:08:01+05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="211" LINES="51"]
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.2/vagrant [01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.2/vagrant[00m$ vagrant up
+[?2004l
+[0mBringing machine 'vm1' up with 'virtualbox' provider...[0m
+[0mBringing machine 'vm2' up with 'virtualbox' provider...[0m
+[1m==> vm1: Importing base box 'ubuntu/focal64'...[0m
+[0m
+[K[0m[0mProgress: 90%[0m[0m
+[K[0m[1m==> vm1: Matching MAC address for NAT networking...[0m
+[1m==> vm1: Checking if box 'ubuntu/focal64' version '20231011.0.0' is up to date...[0m
+[1m==> vm1: Setting the name of the VM: vm1[0m
+[1m==> vm1: Clearing any previously set network interfaces...[0m
+[1m==> vm1: Preparing network interfaces based on configuration...[0m
+[0m    vm1: Adapter 1: nat[0m
+[0m    vm1: Adapter 2: bridged[0m
+[1m==> vm1: Forwarding ports...[0m
+[0m    vm1: 80 (guest) => 8080 (host) (adapter 1)[0m
+[0m    vm1: 22 (guest) => 2222 (host) (adapter 1)[0m
+[1m==> vm1: Running 'pre-boot' VM customizations...[0m
+[1m==> vm1: Booting VM...[0m
+[1m==> vm1: Waiting for machine to boot. This may take a few minutes...[0m
+[0m    vm1: SSH address: 127.0.0.1:2222[0m
+[0m    vm1: SSH username: vagrant[0m
+[0m    vm1: SSH auth method: private key[0m
+[0m    vm1: Warning: Remote connection disconnect. Retrying...[0m
+[0m    vm1: 
+    vm1: Vagrant insecure key detected. Vagrant will automatically replace
+    vm1: this with a newly generated keypair for better security.[0m
+[0m    vm1: 
+    vm1: Inserting generated public key within guest...[0m
+[0m    vm1: Removing insecure key from the guest if it's present...[0m
+[0m    vm1: Key inserted! Disconnecting and reconnecting using new SSH key...[0m
+[1m==> vm1: Machine booted and ready![0m
+[1m==> vm1: Checking for guest additions in VM...[0m
+[1m==> vm1: Configuring and enabling network interfaces...[0m
+[1m==> vm1: Mounting shared folders...[0m
+[0m    vm1: /vagrant => /home/ruslan/IT-2023/task_2/task_2.2/vagrant[0m
+[1m==> vm1: Running provisioner: shell...[0m
+[0m    vm1: Running: /tmp/vagrant-shell20231028-11902-65mtc3.sh[0m
+[0;32m    vm1: Installing java[0m
+[0;31m    vm1: [0m
+[0;31m    vm1: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.[0m
+[0;31m    vm1: [0m
+[0;32m    vm1: Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease[0m
+[0;32m    vm1: Get:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB][0m
+[0;32m    vm1: Get:3 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB][0m
+[0;32m    vm1: Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB][0m
+[0;32m    vm1: Get:5 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB][0m
+[0;32m    vm1: Get:6 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2535 kB][0m
+[0;32m    vm1: Get:7 http://archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB][0m
+[0;32m    vm1: Get:8 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB][0m
+[0;32m    vm1: Get:9 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB][0m
+[0;32m    vm1: Get:10 http://archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB][0m
+[0;32m    vm1: Get:11 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B][0m
+[0;32m    vm1: Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [2937 kB][0m
+[0;32m    vm1: Get:13 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [394 kB][0m
+[0;32m    vm1: Get:14 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [13.2 kB][0m
+[0;32m    vm1: Get:15 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [2315 kB][0m
+[0;32m    vm1: Get:16 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [477 kB][0m
+[0;32m    vm1: Get:17 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [324 kB][0m
+[0;32m    vm1: Get:18 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [572 B][0m
+[0;32m    vm1: Get:19 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [894 kB][0m
+[0;32m    vm1: Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [17.2 kB][0m
+[0;32m    vm1: Get:21 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [187 kB][0m
+[0;32m    vm1: Get:22 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [19.2 kB][0m
+[0;32m    vm1: Get:23 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [23.6 kB][0m
+[0;32m    vm1: Get:24 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [5504 B][0m
+[0;32m    vm1: Get:25 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [548 B][0m
+[0;32m    vm1: Get:26 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [2433 kB][0m
+[0;32m    vm1: Get:27 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [341 kB][0m
+[0;32m    vm1: Get:28 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [568 B][0m
+[0;32m    vm1: Get:29 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1126 kB][0m
+[0;32m    vm1: Get:30 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [268 kB][0m
+[0;32m    vm1: Get:31 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [25.6 kB][0m
+[0;32m    vm1: Get:32 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [25.8 kB][0m
+[0;32m    vm1: Get:33 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [7484 B][0m
+[0;32m    vm1: Get:34 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [620 B][0m
+[0;32m    vm1: Get:35 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [45.7 kB][0m
+[0;32m    vm1: Get:36 http://archive.ubuntu.com/ubuntu focal-backports/main Translation-en [16.3 kB][0m
+[0;32m    vm1: Get:37 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1420 B][0m
+[0;32m    vm1: Get:38 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B][0m
+[0;32m    vm1: Get:39 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [25.0 kB][0m
+[0;32m    vm1: Get:40 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [16.3 kB][0m
+[0;32m    vm1: Get:41 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B][0m
+[0;32m    vm1: Get:42 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B][0m
+[0;32m    vm1: Fetched 29.1 MB in 5s (6137 kB/s)[0m
+[0;32m    vm1: Reading package lists...[0m
+[0;32m    vm1: Building dependency tree...[0m
+[0;32m    vm1: Reading state information...[0m
+[0;32m    vm1: 13 packages can be upgraded. Run 'apt list --upgradable' to see them.[0m
+[0;31m    vm1: [0m
+[0;31m    vm1: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.[0m
+[0;31m    vm1: [0m
+[0;32m    vm1: Reading package lists...[0m
+[0;32m    vm1: Building dependency tree...[0m
+[0;32m    vm1: Reading state information...[0m
+[0;32m    vm1: The following additional packages will be installed:[0m
+[0;32m    vm1:   at-spi2-core ca-certificates-java default-jre-headless fontconfig-config[0m
+[0;32m    vm1:   fonts-dejavu-core fonts-dejavu-extra java-common libatk-bridge2.0-0[0m
+[0;32m    vm1:   libatk-wrapper-java libatk-wrapper-java-jni libatk1.0-0 libatk1.0-data[0m
+[0;32m    vm1:   libatspi2.0-0 libavahi-client3 libavahi-common-data libavahi-common3[0m
+[0;32m    vm1:   libcups2 libdrm-amdgpu1 libdrm-intel1 libdrm-nouveau2 libdrm-radeon1[0m
+[0;32m    vm1:   libfontconfig1 libfontenc1 libgif7 libgl1 libgl1-mesa-dri libglapi-mesa[0m
+[0;32m    vm1:   libglvnd0 libglx-mesa0 libglx0 libgraphite2-3 libharfbuzz0b libice6[0m
+[0;32m    vm1:   libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm12 libpciaccess0 libpcsclite1[0m
+[0;32m    vm1:   libsensors-config libsensors5 libsm6 libvulkan1 libwayland-client0[0m
+[0;32m    vm1:   libx11-xcb1 libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0[0m
+[0;32m    vm1:   libxcb-randr0 libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcb-xfixes0[0m
+[0;32m    vm1:   libxcomposite1 libxfixes3 libxft2 libxi6 libxinerama1 libxkbfile1 libxmu6[0m
+[0;32m    vm1:   libxpm4 libxrandr2 libxrender1 libxshmfence1 libxt6 libxtst6 libxv1[0m
+[0;32m    vm1:   libxxf86dga1 libxxf86vm1 mesa-vulkan-drivers openjdk-11-jre[0m
+[0;32m    vm1:   openjdk-11-jre-headless x11-common x11-utils[0m
+[0;32m    vm1: Suggested packages:[0m
+[0;32m    vm1:   cups-common liblcms2-utils pcscd lm-sensors libnss-mdns fonts-ipafont-gothic[0m
+[0;32m    vm1:   fonts-ipafont-mincho fonts-wqy-microhei | fonts-wqy-zenhei fonts-indic[0m
+[0;32m    vm1:   mesa-utils[0m
+[0;32m    vm1: The following NEW packages will be installed:[0m
+[0;32m    vm1:   at-spi2-core ca-certificates-java default-jre default-jre-headless[0m
+[0;32m    vm1:   fontconfig-config fonts-dejavu-core fonts-dejavu-extra java-common[0m
+[0;32m    vm1:   libatk-bridge2.0-0 libatk-wrapper-java libatk-wrapper-java-jni libatk1.0-0[0m
+[0;32m    vm1:   libatk1.0-data libatspi2.0-0 libavahi-client3 libavahi-common-data[0m
+[0;32m    vm1:   libavahi-common3 libcups2 libdrm-amdgpu1 libdrm-intel1 libdrm-nouveau2[0m
+[0;32m    vm1:   libdrm-radeon1 libfontconfig1 libfontenc1 libgif7 libgl1 libgl1-mesa-dri[0m
+[0;32m    vm1:   libglapi-mesa libglvnd0 libglx-mesa0 libglx0 libgraphite2-3 libharfbuzz0b[0m
+[0;32m    vm1:   libice6 libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm12 libpciaccess0[0m
+[0;32m    vm1:   libpcsclite1 libsensors-config libsensors5 libsm6 libvulkan1[0m
+[0;32m    vm1:   libwayland-client0 libx11-xcb1 libxaw7 libxcb-dri2-0 libxcb-dri3-0[0m
+[0;32m    vm1:   libxcb-glx0 libxcb-present0 libxcb-randr0 libxcb-shape0 libxcb-shm0[0m
+[0;32m    vm1:   libxcb-sync1 libxcb-xfixes0 libxcomposite1 libxfixes3 libxft2 libxi6[0m
+[0;32m    vm1:   libxinerama1 libxkbfile1 libxmu6 libxpm4 libxrandr2 libxrender1[0m
+[0;32m    vm1:   libxshmfence1 libxt6 libxtst6 libxv1 libxxf86dga1 libxxf86vm1[0m
+[0;32m    vm1:   mesa-vulkan-drivers openjdk-11-jre openjdk-11-jre-headless x11-common[0m
+[0;32m    vm1:   x11-utils[0m
+[0;32m    vm1: 0 upgraded, 77 newly installed, 0 to remove and 13 not upgraded.[0m
+[0;32m    vm1: Need to get 80.2 MB of archives.[0m
+[0;32m    vm1: After this operation, 720 MB of additional disk space will be used.[0m
+[0;32m    vm1: Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libatspi2.0-0 amd64 2.36.0-2 [64.2 kB][0m
+[0;32m    vm1: Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 x11-common all 1:7.7+19ubuntu14 [22.3 kB][0m
+[0;32m    vm1: Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 libxtst6 amd64 2:1.2.3-1 [12.8 kB][0m
+[0;32m    vm1: Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 at-spi2-core amd64 2.36.0-2 [48.7 kB][0m
+[0;32m    vm1: Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 java-common all 0.72 [6816 B][0m
+[0;32m    vm1: Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libavahi-common-data amd64 0.7-4ubuntu7.2 [21.4 kB][0m
+[0;32m    vm1: Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libavahi-common3 amd64 0.7-4ubuntu7.2 [21.7 kB][0m
+[0;32m    vm1: Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libavahi-client3 amd64 0.7-4ubuntu7.2 [25.5 kB][0m
+[0;32m    vm1: Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcups2 amd64 2.3.1-9ubuntu1.6 [233 kB][0m
+[0;32m    vm1: Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 liblcms2-2 amd64 2.9-4 [140 kB][0m
+[0;32m    vm1: Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libjpeg-turbo8 amd64 2.0.3-0ubuntu1.20.04.3 [118 kB][0m
+[0;32m    vm1: Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 libjpeg8 amd64 8c-2ubuntu8 [2194 B][0m
+[0;32m    vm1: Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 fonts-dejavu-core all 2.37-1 [1041 kB][0m
+[0;32m    vm1: Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 fontconfig-config all 2.13.1-2ubuntu3 [28.8 kB][0m
+[0;32m    vm1: Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 libfontconfig1 amd64 2.13.1-2ubuntu3 [114 kB][0m
+[0;32m    vm1: Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 libgraphite2-3 amd64 1.3.13-11build1 [73.5 kB][0m
+[0;32m    vm1: Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libharfbuzz0b amd64 2.6.4-1ubuntu4.2 [391 kB][0m
+[0;32m    vm1: Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 libpcsclite1 amd64 1.8.26-3 [22.0 kB][0m
+[0;32m    vm1: Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openjdk-11-jre-headless amd64 11.0.20.1+1-0ubuntu1~20.04 [38.2 MB][0m
+[0;32m    vm1: Get:20 http://archive.ubuntu.com/ubuntu focal/main amd64 default-jre-headless amd64 2:1.11-72 [3192 B][0m
+[0;32m    vm1: Get:21 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 ca-certificates-java all 20190405ubuntu1.1 [12.4 kB][0m
+[0;32m    vm1: Get:22 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglvnd0 amd64 1.3.2-1~ubuntu0.20.04.2 [48.1 kB][0m
+[0;32m    vm1: Get:23 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglapi-mesa amd64 21.2.6-0ubuntu0.1~20.04.2 [27.4 kB][0m
+[0;32m    vm1: Get:24 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libx11-xcb1 amd64 2:1.6.9-2ubuntu1.6 [9448 B][0m
+[0;32m    vm1: Get:25 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-dri2-0 amd64 1.14-2 [6920 B][0m
+[0;32m    vm1: Get:26 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-dri3-0 amd64 1.14-2 [6552 B][0m
+[0;32m    vm1: Get:27 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-glx0 amd64 1.14-2 [22.1 kB][0m
+[0;32m    vm1: Get:28 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-present0 amd64 1.14-2 [5560 B][0m
+[0;32m    vm1: Get:29 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-shm0 amd64 1.14-2 [5584 B][0m
+[0;32m    vm1: Get:30 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-sync1 amd64 1.14-2 [8884 B][0m
+[0;32m    vm1: Get:31 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-xfixes0 amd64 1.14-2 [9296 B][0m
+[0;32m    vm1: Get:32 http://archive.ubuntu.com/ubuntu focal/main amd64 libxfixes3 amd64 1:5.0.3-2 [10.9 kB][0m
+[0;32m    vm1: Get:33 http://archive.ubuntu.com/ubuntu focal/main amd64 libxshmfence1 amd64 1.3-1 [5028 B][0m
+[0;32m    vm1: Get:34 http://archive.ubuntu.com/ubuntu focal/main amd64 libxxf86vm1 amd64 1:1.1.4-1build1 [10.2 kB][0m
+[0;32m    vm1: Get:35 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdrm-amdgpu1 amd64 2.4.107-8ubuntu1~20.04.2 [18.6 kB][0m
+[0;32m    vm1: Get:36 http://archive.ubuntu.com/ubuntu focal/main amd64 libpciaccess0 amd64 0.16-0ubuntu1 [17.9 kB][0m
+[0;32m    vm1: Get:37 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdrm-intel1 amd64 2.4.107-8ubuntu1~20.04.2 [60.3 kB][0m
+[0;32m    vm1: Get:38 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdrm-nouveau2 amd64 2.4.107-8ubuntu1~20.04.2 [16.6 kB][0m
+[0;32m    vm1: Get:39 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdrm-radeon1 amd64 2.4.107-8ubuntu1~20.04.2 [19.7 kB][0m
+[0;32m    vm1: Get:40 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libllvm12 amd64 1:12.0.0-3ubuntu1~20.04.5 [18.8 MB][0m
+[0;32m    vm1: Get:41 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsensors-config all 1:3.6.0-2ubuntu1.1 [6052 B][0m
+[0;32m    vm1: Get:42 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsensors5 amd64 1:3.6.0-2ubuntu1.1 [27.2 kB][0m
+[0;32m    vm1: Get:43 http://archive.ubuntu.com/ubuntu focal/main amd64 libvulkan1 amd64 1.2.131.2-1 [93.3 kB][0m
+[0;32m    vm1: Get:44 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgl1-mesa-dri amd64 21.2.6-0ubuntu0.1~20.04.2 [11.0 MB][0m
+[0;32m    vm1: Get:45 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglx-mesa0 amd64 21.2.6-0ubuntu0.1~20.04.2 [137 kB][0m
+[0;32m    vm1: Get:46 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libglx0 amd64 1.3.2-1~ubuntu0.20.04.2 [32.5 kB][0m
+[0;32m    vm1: Get:47 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgl1 amd64 1.3.2-1~ubuntu0.20.04.2 [85.8 kB][0m
+[0;32m    vm1: Get:48 http://archive.ubuntu.com/ubuntu focal/main amd64 libgif7 amd64 5.1.9-1 [32.2 kB][0m
+[0;32m    vm1: Get:49 http://archive.ubuntu.com/ubuntu focal/main amd64 libxi6 amd64 2:1.7.10-0ubuntu1 [29.9 kB][0m
+[0;32m    vm1: Get:50 http://archive.ubuntu.com/ubuntu focal/main amd64 libxrender1 amd64 1:0.9.10-1 [18.7 kB][0m
+[0;32m    vm1: Get:51 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openjdk-11-jre amd64 11.0.20.1+1-0ubuntu1~20.04 [193 kB][0m
+[0;32m    vm1: Get:52 http://archive.ubuntu.com/ubuntu focal/main amd64 default-jre amd64 2:1.11-72 [1084 B][0m
+[0;32m    vm1: Get:53 http://archive.ubuntu.com/ubuntu focal/main amd64 fonts-dejavu-extra all 2.37-1 [1953 kB][0m
+[0;32m    vm1: Get:54 http://archive.ubuntu.com/ubuntu focal/main amd64 libatk1.0-data all 2.35.1-1ubuntu2 [2964 B][0m
+[0;32m    vm1: Get:55 http://archive.ubuntu.com/ubuntu focal/main amd64 libatk1.0-0 amd64 2.35.1-1ubuntu2 [45.5 kB][0m
+[0;32m    vm1: Get:56 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libatk-bridge2.0-0 amd64 2.34.2-0ubuntu2~20.04.1 [58.2 kB][0m
+[0;32m    vm1: Get:57 http://archive.ubuntu.com/ubuntu focal/main amd64 libfontenc1 amd64 1:1.1.4-0ubuntu1 [14.0 kB][0m
+[0;32m    vm1: Get:58 http://archive.ubuntu.com/ubuntu focal/main amd64 libice6 amd64 2:1.0.10-0ubuntu1 [41.0 kB][0m
+[0;32m    vm1: Get:59 http://archive.ubuntu.com/ubuntu focal/main amd64 libsm6 amd64 2:1.2.3-1 [16.1 kB][0m
+[0;32m    vm1: Get:60 http://archive.ubuntu.com/ubuntu focal/main amd64 libxt6 amd64 1:1.1.5-1 [160 kB][0m
+[0;32m    vm1: Get:61 http://archive.ubuntu.com/ubuntu focal/main amd64 libxmu6 amd64 2:1.1.3-0ubuntu1 [45.8 kB][0m
+[0;32m    vm1: Get:62 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxpm4 amd64 1:3.5.12-1ubuntu0.20.04.2 [34.9 kB][0m
+[0;32m    vm1: Get:63 http://archive.ubuntu.com/ubuntu focal/main amd64 libxaw7 amd64 2:1.0.13-1 [173 kB][0m
+[0;32m    vm1: Get:64 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-shape0 amd64 1.14-2 [5928 B][0m
+[0;32m    vm1: Get:65 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcomposite1 amd64 1:0.4.5-1 [6976 B][0m
+[0;32m    vm1: Get:66 http://archive.ubuntu.com/ubuntu focal/main amd64 libxft2 amd64 2.3.3-0ubuntu1 [39.2 kB][0m
+[0;32m    vm1: Get:67 http://archive.ubuntu.com/ubuntu focal/main amd64 libxinerama1 amd64 2:1.1.4-2 [6904 B][0m
+[0;32m    vm1: Get:68 http://archive.ubuntu.com/ubuntu focal/main amd64 libxkbfile1 amd64 1:1.1.0-1 [65.3 kB][0m
+[0;32m    vm1: Get:69 http://archive.ubuntu.com/ubuntu focal/main amd64 libxrandr2 amd64 2:1.5.2-0ubuntu1 [18.5 kB][0m
+[0;32m    vm1: Get:70 http://archive.ubuntu.com/ubuntu focal/main amd64 libxv1 amd64 2:1.0.11-1 [10.7 kB][0m
+[0;32m    vm1: Get:71 http://archive.ubuntu.com/ubuntu focal/main amd64 libxxf86dga1 amd64 2:1.1.5-0ubuntu1 [12.0 kB][0m
+[0;32m    vm1: Get:72 http://archive.ubuntu.com/ubuntu focal/main amd64 x11-utils amd64 7.7+5 [199 kB][0m
+[0;32m    vm1: Get:73 http://archive.ubuntu.com/ubuntu focal/main amd64 libatk-wrapper-java all 0.37.1-1 [53.0 kB][0m
+[0;32m    vm1: Get:74 http://archive.ubuntu.com/ubuntu focal/main amd64 libatk-wrapper-java-jni amd64 0.37.1-1 [45.1 kB][0m
+[0;32m    vm1: Get:75 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libwayland-client0 amd64 1.18.0-1ubuntu0.1 [23.9 kB][0m
+[0;32m    vm1: Get:76 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-randr0 amd64 1.14-2 [16.3 kB][0m
+[0;32m    vm1: Get:77 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 mesa-vulkan-drivers amd64 21.2.6-0ubuntu0.1~20.04.2 [5788 kB][0m
+[0;31m    vm1: dpkg-preconfigure: unable to re-open stdin: No such file or directory[0m
+[0;32m    vm1: Fetched 80.2 MB in 9s (8964 kB/s)[0m
+[0;32m    vm1: Selecting previously unselected package libatspi2.0-0:amd64.[0m
+[0;32m    vm1: (Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 63743 files and directories currently installed.)[0m
+[0;32m    vm1: Preparing to unpack .../00-libatspi2.0-0_2.36.0-2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libatspi2.0-0:amd64 (2.36.0-2) ...[0m
+[0;32m    vm1: Selecting previously unselected package x11-common.[0m
+[0;32m    vm1: Preparing to unpack .../01-x11-common_1%3a7.7+19ubuntu14_all.deb ...[0m
+[0;32m    vm1: dpkg-query: no packages found matching nux-tools[0m
+[0;32m    vm1: Unpacking x11-common (1:7.7+19ubuntu14) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxtst6:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../02-libxtst6_2%3a1.2.3-1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxtst6:amd64 (2:1.2.3-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package at-spi2-core.[0m
+[0;32m    vm1: Preparing to unpack .../03-at-spi2-core_2.36.0-2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking at-spi2-core (2.36.0-2) ...[0m
+[0;32m    vm1: Selecting previously unselected package java-common.[0m
+[0;32m    vm1: Preparing to unpack .../04-java-common_0.72_all.deb ...[0m
+[0;32m    vm1: Unpacking java-common (0.72) ...[0m
+[0;32m    vm1: Selecting previously unselected package libavahi-common-data:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../05-libavahi-common-data_0.7-4ubuntu7.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libavahi-common-data:amd64 (0.7-4ubuntu7.2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libavahi-common3:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../06-libavahi-common3_0.7-4ubuntu7.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libavahi-common3:amd64 (0.7-4ubuntu7.2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libavahi-client3:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../07-libavahi-client3_0.7-4ubuntu7.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libavahi-client3:amd64 (0.7-4ubuntu7.2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libcups2:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../08-libcups2_2.3.1-9ubuntu1.6_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libcups2:amd64 (2.3.1-9ubuntu1.6) ...[0m
+[0;32m    vm1: Selecting previously unselected package liblcms2-2:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../09-liblcms2-2_2.9-4_amd64.deb ...[0m
+[0;32m    vm1: Unpacking liblcms2-2:amd64 (2.9-4) ...[0m
+[0;32m    vm1: Selecting previously unselected package libjpeg-turbo8:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../10-libjpeg-turbo8_2.0.3-0ubuntu1.20.04.3_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libjpeg-turbo8:amd64 (2.0.3-0ubuntu1.20.04.3) ...[0m
+[0;32m    vm1: Selecting previously unselected package libjpeg8:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../11-libjpeg8_8c-2ubuntu8_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libjpeg8:amd64 (8c-2ubuntu8) ...[0m
+[0;32m    vm1: Selecting previously unselected package fonts-dejavu-core.[0m
+[0;32m    vm1: Preparing to unpack .../12-fonts-dejavu-core_2.37-1_all.deb ...[0m
+[0;32m    vm1: Unpacking fonts-dejavu-core (2.37-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package fontconfig-config.[0m
+[0;32m    vm1: Preparing to unpack .../13-fontconfig-config_2.13.1-2ubuntu3_all.deb ...[0m
+[0;32m    vm1: Unpacking fontconfig-config (2.13.1-2ubuntu3) ...[0m
+[0;32m    vm1: Selecting previously unselected package libfontconfig1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../14-libfontconfig1_2.13.1-2ubuntu3_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libfontconfig1:amd64 (2.13.1-2ubuntu3) ...[0m
+[0;32m    vm1: Selecting previously unselected package libgraphite2-3:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../15-libgraphite2-3_1.3.13-11build1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libgraphite2-3:amd64 (1.3.13-11build1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libharfbuzz0b:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../16-libharfbuzz0b_2.6.4-1ubuntu4.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libharfbuzz0b:amd64 (2.6.4-1ubuntu4.2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libpcsclite1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../17-libpcsclite1_1.8.26-3_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libpcsclite1:amd64 (1.8.26-3) ...[0m
+[0;32m    vm1: Selecting previously unselected package openjdk-11-jre-headless:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../18-openjdk-11-jre-headless_11.0.20.1+1-0ubuntu1~20.04_amd64.deb ...[0m
+[0;32m    vm1: Unpacking openjdk-11-jre-headless:amd64 (11.0.20.1+1-0ubuntu1~20.04) ...[0m
+[0;32m    vm1: Selecting previously unselected package default-jre-headless.[0m
+[0;32m    vm1: Preparing to unpack .../19-default-jre-headless_2%3a1.11-72_amd64.deb ...[0m
+[0;32m    vm1: Unpacking default-jre-headless (2:1.11-72) ...[0m
+[0;32m    vm1: Selecting previously unselected package ca-certificates-java.[0m
+[0;32m    vm1: Preparing to unpack .../20-ca-certificates-java_20190405ubuntu1.1_all.deb ...[0m
+[0;32m    vm1: Unpacking ca-certificates-java (20190405ubuntu1.1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libglvnd0:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../21-libglvnd0_1.3.2-1~ubuntu0.20.04.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libglvnd0:amd64 (1.3.2-1~ubuntu0.20.04.2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libglapi-mesa:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../22-libglapi-mesa_21.2.6-0ubuntu0.1~20.04.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libglapi-mesa:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libx11-xcb1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../23-libx11-xcb1_2%3a1.6.9-2ubuntu1.6_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libx11-xcb1:amd64 (2:1.6.9-2ubuntu1.6) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxcb-dri2-0:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../24-libxcb-dri2-0_1.14-2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxcb-dri2-0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxcb-dri3-0:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../25-libxcb-dri3-0_1.14-2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxcb-dri3-0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxcb-glx0:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../26-libxcb-glx0_1.14-2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxcb-glx0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxcb-present0:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../27-libxcb-present0_1.14-2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxcb-present0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxcb-shm0:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../28-libxcb-shm0_1.14-2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxcb-shm0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxcb-sync1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../29-libxcb-sync1_1.14-2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxcb-sync1:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxcb-xfixes0:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../30-libxcb-xfixes0_1.14-2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxcb-xfixes0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxfixes3:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../31-libxfixes3_1%3a5.0.3-2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxfixes3:amd64 (1:5.0.3-2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxshmfence1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../32-libxshmfence1_1.3-1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxshmfence1:amd64 (1.3-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxxf86vm1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../33-libxxf86vm1_1%3a1.1.4-1build1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxxf86vm1:amd64 (1:1.1.4-1build1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libdrm-amdgpu1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../34-libdrm-amdgpu1_2.4.107-8ubuntu1~20.04.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libdrm-amdgpu1:amd64 (2.4.107-8ubuntu1~20.04.2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libpciaccess0:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../35-libpciaccess0_0.16-0ubuntu1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libpciaccess0:amd64 (0.16-0ubuntu1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libdrm-intel1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../36-libdrm-intel1_2.4.107-8ubuntu1~20.04.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libdrm-intel1:amd64 (2.4.107-8ubuntu1~20.04.2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libdrm-nouveau2:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../37-libdrm-nouveau2_2.4.107-8ubuntu1~20.04.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libdrm-nouveau2:amd64 (2.4.107-8ubuntu1~20.04.2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libdrm-radeon1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../38-libdrm-radeon1_2.4.107-8ubuntu1~20.04.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libdrm-radeon1:amd64 (2.4.107-8ubuntu1~20.04.2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libllvm12:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../39-libllvm12_1%3a12.0.0-3ubuntu1~20.04.5_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libllvm12:amd64 (1:12.0.0-3ubuntu1~20.04.5) ...[0m
+[0;32m    vm1: Selecting previously unselected package libsensors-config.[0m
+[0;32m    vm1: Preparing to unpack .../40-libsensors-config_1%3a3.6.0-2ubuntu1.1_all.deb ...[0m
+[0;32m    vm1: Unpacking libsensors-config (1:3.6.0-2ubuntu1.1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libsensors5:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../41-libsensors5_1%3a3.6.0-2ubuntu1.1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libsensors5:amd64 (1:3.6.0-2ubuntu1.1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libvulkan1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../42-libvulkan1_1.2.131.2-1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libvulkan1:amd64 (1.2.131.2-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libgl1-mesa-dri:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../43-libgl1-mesa-dri_21.2.6-0ubuntu0.1~20.04.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libgl1-mesa-dri:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libglx-mesa0:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../44-libglx-mesa0_21.2.6-0ubuntu0.1~20.04.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libglx-mesa0:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libglx0:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../45-libglx0_1.3.2-1~ubuntu0.20.04.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libglx0:amd64 (1.3.2-1~ubuntu0.20.04.2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libgl1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../46-libgl1_1.3.2-1~ubuntu0.20.04.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libgl1:amd64 (1.3.2-1~ubuntu0.20.04.2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libgif7:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../47-libgif7_5.1.9-1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libgif7:amd64 (5.1.9-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxi6:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../48-libxi6_2%3a1.7.10-0ubuntu1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxi6:amd64 (2:1.7.10-0ubuntu1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxrender1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../49-libxrender1_1%3a0.9.10-1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxrender1:amd64 (1:0.9.10-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package openjdk-11-jre:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../50-openjdk-11-jre_11.0.20.1+1-0ubuntu1~20.04_amd64.deb ...[0m
+[0;32m    vm1: Unpacking openjdk-11-jre:amd64 (11.0.20.1+1-0ubuntu1~20.04) ...[0m
+[0;32m    vm1: Selecting previously unselected package default-jre.[0m
+[0;32m    vm1: Preparing to unpack .../51-default-jre_2%3a1.11-72_amd64.deb ...[0m
+[0;32m    vm1: Unpacking default-jre (2:1.11-72) ...[0m
+[0;32m    vm1: Selecting previously unselected package fonts-dejavu-extra.[0m
+[0;32m    vm1: Preparing to unpack .../52-fonts-dejavu-extra_2.37-1_all.deb ...[0m
+[0;32m    vm1: Unpacking fonts-dejavu-extra (2.37-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libatk1.0-data.[0m
+[0;32m    vm1: Preparing to unpack .../53-libatk1.0-data_2.35.1-1ubuntu2_all.deb ...[0m
+[0;32m    vm1: Unpacking libatk1.0-data (2.35.1-1ubuntu2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libatk1.0-0:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../54-libatk1.0-0_2.35.1-1ubuntu2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libatk1.0-0:amd64 (2.35.1-1ubuntu2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libatk-bridge2.0-0:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../55-libatk-bridge2.0-0_2.34.2-0ubuntu2~20.04.1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libatk-bridge2.0-0:amd64 (2.34.2-0ubuntu2~20.04.1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libfontenc1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../56-libfontenc1_1%3a1.1.4-0ubuntu1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libfontenc1:amd64 (1:1.1.4-0ubuntu1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libice6:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../57-libice6_2%3a1.0.10-0ubuntu1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libice6:amd64 (2:1.0.10-0ubuntu1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libsm6:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../58-libsm6_2%3a1.2.3-1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libsm6:amd64 (2:1.2.3-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxt6:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../59-libxt6_1%3a1.1.5-1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxt6:amd64 (1:1.1.5-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxmu6:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../60-libxmu6_2%3a1.1.3-0ubuntu1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxmu6:amd64 (2:1.1.3-0ubuntu1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxpm4:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../61-libxpm4_1%3a3.5.12-1ubuntu0.20.04.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxpm4:amd64 (1:3.5.12-1ubuntu0.20.04.2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxaw7:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../62-libxaw7_2%3a1.0.13-1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxaw7:amd64 (2:1.0.13-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxcb-shape0:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../63-libxcb-shape0_1.14-2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxcb-shape0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxcomposite1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../64-libxcomposite1_1%3a0.4.5-1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxcomposite1:amd64 (1:0.4.5-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxft2:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../65-libxft2_2.3.3-0ubuntu1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxft2:amd64 (2.3.3-0ubuntu1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxinerama1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../66-libxinerama1_2%3a1.1.4-2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxinerama1:amd64 (2:1.1.4-2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxkbfile1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../67-libxkbfile1_1%3a1.1.0-1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxkbfile1:amd64 (1:1.1.0-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxrandr2:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../68-libxrandr2_2%3a1.5.2-0ubuntu1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxrandr2:amd64 (2:1.5.2-0ubuntu1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxv1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../69-libxv1_2%3a1.0.11-1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxv1:amd64 (2:1.0.11-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxxf86dga1:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../70-libxxf86dga1_2%3a1.1.5-0ubuntu1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxxf86dga1:amd64 (2:1.1.5-0ubuntu1) ...[0m
+[0;32m    vm1: Selecting previously unselected package x11-utils.[0m
+[0;32m    vm1: Preparing to unpack .../71-x11-utils_7.7+5_amd64.deb ...[0m
+[0;32m    vm1: Unpacking x11-utils (7.7+5) ...[0m
+[0;32m    vm1: Selecting previously unselected package libatk-wrapper-java.[0m
+[0;32m    vm1: Preparing to unpack .../72-libatk-wrapper-java_0.37.1-1_all.deb ...[0m
+[0;32m    vm1: Unpacking libatk-wrapper-java (0.37.1-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libatk-wrapper-java-jni:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../73-libatk-wrapper-java-jni_0.37.1-1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libatk-wrapper-java-jni:amd64 (0.37.1-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libwayland-client0:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../74-libwayland-client0_1.18.0-1ubuntu0.1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libwayland-client0:amd64 (1.18.0-1ubuntu0.1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxcb-randr0:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../75-libxcb-randr0_1.14-2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxcb-randr0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Selecting previously unselected package mesa-vulkan-drivers:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../76-mesa-vulkan-drivers_21.2.6-0ubuntu0.1~20.04.2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking mesa-vulkan-drivers:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...[0m
+[0;32m    vm1: Setting up libgraphite2-3:amd64 (1.3.13-11build1) ...[0m
+[0;32m    vm1: Setting up libxcb-dri3-0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Setting up liblcms2-2:amd64 (2.9-4) ...[0m
+[0;32m    vm1: Setting up libx11-xcb1:amd64 (2:1.6.9-2ubuntu1.6) ...[0m
+[0;32m    vm1: Setting up libpciaccess0:amd64 (0.16-0ubuntu1) ...[0m
+[0;32m    vm1: Setting up libdrm-nouveau2:amd64 (2.4.107-8ubuntu1~20.04.2) ...[0m
+[0;32m    vm1: Setting up libxcb-xfixes0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Setting up libxpm4:amd64 (1:3.5.12-1ubuntu0.20.04.2) ...[0m
+[0;32m    vm1: Setting up libxi6:amd64 (2:1.7.10-0ubuntu1) ...[0m
+[0;32m    vm1: Setting up java-common (0.72) ...[0m
+[0;32m    vm1: Setting up libxrender1:amd64 (1:0.9.10-1) ...[0m
+[0;32m    vm1: Setting up libdrm-radeon1:amd64 (2.4.107-8ubuntu1~20.04.2) ...[0m
+[0;32m    vm1: Setting up libglvnd0:amd64 (1.3.2-1~ubuntu0.20.04.2) ...[0m
+[0;32m    vm1: Setting up libxcb-glx0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Setting up libdrm-intel1:amd64 (2.4.107-8ubuntu1~20.04.2) ...[0m
+[0;32m    vm1: Setting up libxcb-shape0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Setting up x11-common (1:7.7+19ubuntu14) ...[0m
+[0;32m    vm1: update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults[0m
+[0;32m    vm1: Setting up libsensors-config (1:3.6.0-2ubuntu1.1) ...[0m
+[0;32m    vm1: Setting up libxxf86dga1:amd64 (2:1.1.5-0ubuntu1) ...[0m
+[0;32m    vm1: Setting up libxcb-shm0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Setting up libatspi2.0-0:amd64 (2.36.0-2) ...[0m
+[0;32m    vm1: Setting up libxxf86vm1:amd64 (1:1.1.4-1build1) ...[0m
+[0;32m    vm1: Setting up libxcb-present0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Setting up libfontenc1:amd64 (1:1.1.4-0ubuntu1) ...[0m
+[0;32m    vm1: Setting up libxfixes3:amd64 (1:5.0.3-2) ...[0m
+[0;32m    vm1: Setting up libxcb-sync1:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Setting up libavahi-common-data:amd64 (0.7-4ubuntu7.2) ...[0m
+[0;32m    vm1: Setting up libllvm12:amd64 (1:12.0.0-3ubuntu1~20.04.5) ...[0m
+[0;32m    vm1: Setting up libxinerama1:amd64 (2:1.1.4-2) ...[0m
+[0;32m    vm1: Setting up libxv1:amd64 (2:1.0.11-1) ...[0m
+[0;32m    vm1: Setting up libxrandr2:amd64 (2:1.5.2-0ubuntu1) ...[0m
+[0;32m    vm1: Setting up fonts-dejavu-core (2.37-1) ...[0m
+[0;32m    vm1: Setting up libpcsclite1:amd64 (1.8.26-3) ...[0m
+[0;32m    vm1: Setting up libsensors5:amd64 (1:3.6.0-2ubuntu1.1) ...[0m
+[0;32m    vm1: Setting up libjpeg-turbo8:amd64 (2.0.3-0ubuntu1.20.04.3) ...[0m
+[0;32m    vm1: Setting up libglapi-mesa:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...[0m
+[0;32m    vm1: Setting up libvulkan1:amd64 (1.2.131.2-1) ...[0m
+[0;32m    vm1: Setting up libxcb-dri2-0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Setting up libgif7:amd64 (5.1.9-1) ...[0m
+[0;32m    vm1: Setting up libatk1.0-data (2.35.1-1ubuntu2) ...[0m
+[0;32m    vm1: Setting up fonts-dejavu-extra (2.37-1) ...[0m
+[0;32m    vm1: Setting up libxshmfence1:amd64 (1.3-1) ...[0m
+[0;32m    vm1: Setting up libxcb-randr0:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Setting up libharfbuzz0b:amd64 (2.6.4-1ubuntu4.2) ...[0m
+[0;32m    vm1: Setting up libatk1.0-0:amd64 (2.35.1-1ubuntu2) ...[0m
+[0;32m    vm1: Setting up libxkbfile1:amd64 (1:1.1.0-1) ...[0m
+[0;32m    vm1: Setting up libxcomposite1:amd64 (1:0.4.5-1) ...[0m
+[0;32m    vm1: Setting up libdrm-amdgpu1:amd64 (2.4.107-8ubuntu1~20.04.2) ...[0m
+[0;32m    vm1: Setting up libwayland-client0:amd64 (1.18.0-1ubuntu0.1) ...[0m
+[0;32m    vm1: Setting up libjpeg8:amd64 (8c-2ubuntu8) ...[0m
+[0;32m    vm1: Setting up mesa-vulkan-drivers:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...[0m
+[0;32m    vm1: Setting up libice6:amd64 (2:1.0.10-0ubuntu1) ...[0m
+[0;32m    vm1: Setting up fontconfig-config (2.13.1-2ubuntu3) ...[0m
+[0;32m    vm1: Setting up libxtst6:amd64 (2:1.2.3-1) ...[0m
+[0;32m    vm1: Setting up libgl1-mesa-dri:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...[0m
+[0;32m    vm1: Setting up libavahi-common3:amd64 (0.7-4ubuntu7.2) ...[0m
+[0;32m    vm1: Setting up libatk-bridge2.0-0:amd64 (2.34.2-0ubuntu2~20.04.1) ...[0m
+[0;32m    vm1: Setting up at-spi2-core (2.36.0-2) ...[0m
+[0;32m    vm1: Setting up libfontconfig1:amd64 (2.13.1-2ubuntu3) ...[0m
+[0;32m    vm1: Setting up libsm6:amd64 (2:1.2.3-1) ...[0m
+[0;32m    vm1: Setting up libavahi-client3:amd64 (0.7-4ubuntu7.2) ...[0m
+[0;32m    vm1: Setting up libxft2:amd64 (2.3.3-0ubuntu1) ...[0m
+[0;32m    vm1: Setting up libglx-mesa0:amd64 (21.2.6-0ubuntu0.1~20.04.2) ...[0m
+[0;32m    vm1: Setting up libglx0:amd64 (1.3.2-1~ubuntu0.20.04.2) ...[0m
+[0;32m    vm1: Setting up libgl1:amd64 (1.3.2-1~ubuntu0.20.04.2) ...[0m
+[0;32m    vm1: Setting up libxt6:amd64 (1:1.1.5-1) ...[0m
+[0;32m    vm1: Setting up libcups2:amd64 (2.3.1-9ubuntu1.6) ...[0m
+[0;32m    vm1: Setting up libxmu6:amd64 (2:1.1.3-0ubuntu1) ...[0m
+[0;32m    vm1: Setting up libxaw7:amd64 (2:1.0.13-1) ...[0m
+[0;32m    vm1: Setting up x11-utils (7.7+5) ...[0m
+[0;32m    vm1: Setting up libatk-wrapper-java (0.37.1-1) ...[0m
+[0;32m    vm1: Setting up libatk-wrapper-java-jni:amd64 (0.37.1-1) ...[0m
+[0;32m    vm1: Setting up default-jre-headless (2:1.11-72) ...[0m
+[0;32m    vm1: Setting up openjdk-11-jre-headless:amd64 (11.0.20.1+1-0ubuntu1~20.04) ...[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/java to provide /usr/bin/java (java) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jjs to provide /usr/bin/jjs (jjs) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode[0m
+[0;32m    vm1: Setting up openjdk-11-jre:amd64 (11.0.20.1+1-0ubuntu1~20.04) ...[0m
+[0;32m    vm1: Setting up default-jre (2:1.11-72) ...[0m
+[0;32m    vm1: Setting up ca-certificates-java (20190405ubuntu1.1) ...[0m
+[0;32m    vm1: head: cannot open '/etc/ssl/certs/java/cacerts' for reading: No such file or directory[0m
+[0;32m    vm1: Adding debian:SwissSign_Silver_CA_-_G2.pem[0m
+[0;32m    vm1: Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem[0m
+[0;32m    vm1: Adding debian:Microsoft_ECC_Root_Certificate_Authority_2017.pem[0m
+[0;32m    vm1: Adding debian:Actalis_Authentication_Root_CA.pem[0m
+[0;32m    vm1: Adding debian:DigiCert_Global_Root_G2.pem[0m
+[0;32m    vm1: Adding debian:OISTE_WISeKey_Global_Root_GC_CA.pem[0m
+[0;32m    vm1: Adding debian:SwissSign_Gold_CA_-_G2.pem[0m
+[0;32m    vm1: Adding debian:D-TRUST_BR_Root_CA_1_2020.pem[0m
+[0;32m    vm1: Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem[0m
+[0;32m    vm1: Adding debian:Atos_TrustedRoot_2011.pem[0m
+[0;32m    vm1: Adding debian:Hongkong_Post_Root_CA_1.pem[0m
+[0;32m    vm1: Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem[0m
+[0;32m    vm1: Adding debian:HARICA_TLS_RSA_Root_CA_2021.pem[0m
+[0;32m    vm1: Adding debian:Certainly_Root_R1.pem[0m
+[0;32m    vm1: Adding debian:GlobalSign_Root_E46.pem[0m
+[0;32m    vm1: Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem[0m
+[0;32m    vm1: Adding debian:DigiCert_Global_Root_CA.pem[0m
+[0;32m    vm1: Adding debian:SSL.com_Root_Certification_Authority_ECC.pem[0m
+[0;32m    vm1: Adding debian:DigiCert_Assured_ID_Root_CA.pem[0m
+[0;32m    vm1: Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem[0m
+[0;32m    vm1: Adding debian:COMODO_ECC_Certification_Authority.pem[0m
+[0;32m    vm1: Adding debian:vTrus_ECC_Root_CA.pem[0m
+[0;32m    vm1: Adding debian:T-TeleSec_GlobalRoot_Class_2.pem[0m
+[0;32m    vm1: Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem[0m
+[0;32m    vm1: Adding debian:Buypass_Class_3_Root_CA.pem[0m
+[0;32m    vm1: Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem[0m
+[0;32m    vm1: Adding debian:ISRG_Root_X2.pem[0m
+[0;32m    vm1: Adding debian:GDCA_TrustAUTH_R5_ROOT.pem[0m
+[0;32m    vm1: Adding debian:Izenpe.com.pem[0m
+[0;32m    vm1: Adding debian:e-Szigno_Root_CA_2017.pem[0m
+[0;32m    vm1: Adding debian:Security_Communication_ECC_RootCA1.pem[0m
+[0;32m    vm1: Adding debian:SecureTrust_CA.pem[0m
+[0;32m    vm1: Adding debian:CFCA_EV_ROOT.pem[0m
+[0;32m    vm1: Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem[0m
+[0;32m    vm1: Adding debian:AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem[0m
+[0;32m    vm1: Adding debian:GlobalSign_Root_CA_-_R3.pem[0m
+[0;32m    vm1: Adding debian:Amazon_Root_CA_1.pem[0m
+[0;32m    vm1: Adding debian:Trustwave_Global_ECC_P384_Certification_Authority.pem[0m
+[0;32m    vm1: Adding debian:CA_Disig_Root_R2.pem[0m
+[0;32m    vm1: Adding debian:QuoVadis_Root_CA_3.pem[0m
+[0;32m    vm1: Adding debian:GlobalSign_Root_R46.pem[0m
+[0;32m    vm1: Adding debian:Certum_Trusted_Network_CA_2.pem[0m
+[0;32m    vm1: Adding debian:Trustwave_Global_ECC_P256_Certification_Authority.pem[0m
+[0;32m    vm1: Adding debian:IdenTrust_Commercial_Root_CA_1.pem[0m
+[0;32m    vm1: Adding debian:TeliaSonera_Root_CA_v1.pem[0m
+[0;32m    vm1: Adding debian:Trustwave_Global_Certification_Authority.pem[0m
+[0;32m    vm1: Adding debian:QuoVadis_Root_CA_2_G3.pem[0m
+[0;32m    vm1: Adding debian:HiPKI_Root_CA_-_G1.pem[0m
+[0;32m    vm1: Adding debian:Hongkong_Post_Root_CA_3.pem[0m
+[0;32m    vm1: Adding debian:GlobalSign_Root_CA_-_R6.pem[0m
+[0;32m    vm1: Adding debian:Buypass_Class_2_Root_CA.pem[0m
+[0;32m    vm1: Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem[0m
+[0;32m    vm1: Adding debian:GTS_Root_R4.pem[0m
+[0;32m    vm1: Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem[0m
+[0;32m    vm1: Adding debian:DigiCert_TLS_RSA4096_Root_G5.pem[0m
+[0;32m    vm1: Adding debian:Security_Communication_Root_CA.pem[0m
+[0;32m    vm1: Adding debian:Certigna_Root_CA.pem[0m
+[0;32m    vm1: Adding debian:emSign_Root_CA_-_G1.pem[0m
+[0;32m    vm1: Adding debian:certSIGN_Root_CA_G2.pem[0m
+[0;32m    vm1: Adding debian:Certigna.pem[0m
+[0;32m    vm1: Adding debian:E-Tugra_Global_Root_CA_RSA_v3.pem[0m
+[0;32m    vm1: Adding debian:AC_RAIZ_FNMT-RCM.pem[0m
+[0;32m    vm1: Adding debian:emSign_Root_CA_-_C1.pem[0m
+[0;32m    vm1: Adding debian:Microsoft_RSA_Root_Certificate_Authority_2017.pem[0m
+[0;32m    vm1: Adding debian:ISRG_Root_X1.pem[0m
+[0;32m    vm1: Adding debian:DigiCert_TLS_ECC_P384_Root_G5.pem[0m
+[0;32m    vm1: Adding debian:SecureSign_RootCA11.pem[0m
+[0;32m    vm1: Adding debian:Microsec_e-Szigno_Root_CA_2009.pem[0m
+[0;32m    vm1: Adding debian:QuoVadis_Root_CA_2.pem[0m
+[0;32m    vm1: Adding debian:Certainly_Root_E1.pem[0m
+[0;32m    vm1: Adding debian:USERTrust_RSA_Certification_Authority.pem[0m
+[0;32m    vm1: Adding debian:Certum_Trusted_Root_CA.pem[0m
+[0;32m    vm1: Adding debian:SSL.com_Root_Certification_Authority_RSA.pem[0m
+[0;32m    vm1: Adding debian:Amazon_Root_CA_2.pem[0m
+[0;32m    vm1: Adding debian:Comodo_AAA_Services_root.pem[0m
+[0;32m    vm1: Adding debian:NAVER_Global_Root_Certification_Authority.pem[0m
+[0;32m    vm1: Adding debian:GlobalSign_Root_CA.pem[0m
+[0;32m    vm1: Adding debian:vTrus_Root_CA.pem[0m
+[0;32m    vm1: Adding debian:DigiCert_Trusted_Root_G4.pem[0m
+[0;32m    vm1: Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem[0m
+[0;32m    vm1: Adding debian:Security_Communication_RootCA3.pem[0m
+[0;32m    vm1: Adding debian:DigiCert_Assured_ID_Root_G3.pem[0m
+[0;32m    vm1: Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem[0m
+[0;32m    vm1: Adding debian:TunTrust_Root_CA.pem[0m
+[0;32m    vm1: Adding debian:AffirmTrust_Networking.pem[0m
+[0;32m    vm1: Adding debian:Entrust_Root_Certification_Authority_-_G4.pem[0m
+[0;32m    vm1: Adding debian:AffirmTrust_Premium.pem[0m
+[0;32m    vm1: Adding debian:emSign_ECC_Root_CA_-_C3.pem[0m
+[0;32m    vm1: Adding debian:Amazon_Root_CA_4.pem[0m
+[0;32m    vm1: Adding debian:Telia_Root_CA_v2.pem[0m
+[0;32m    vm1: Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem[0m
+[0;32m    vm1: Adding debian:QuoVadis_Root_CA_1_G3.pem[0m
+[0;32m    vm1: Adding debian:Entrust_Root_Certification_Authority_-_G2.pem[0m
+[0;32m    vm1: Adding debian:Go_Daddy_Class_2_CA.pem[0m
+[0;32m    vm1: Adding debian:Starfield_Class_2_CA.pem[0m
+[0;32m    vm1: Adding debian:USERTrust_ECC_Certification_Authority.pem[0m
+[0;32m    vm1: Adding debian:E-Tugra_Global_Root_CA_ECC_v3.pem[0m
+[0;32m    vm1: Adding debian:certSIGN_ROOT_CA.pem[0m
+[0;32m    vm1: Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem[0m
+[0;32m    vm1: Adding debian:QuoVadis_Root_CA_3_G3.pem[0m
+[0;32m    vm1: Adding debian:UCA_Extended_Validation_Root.pem[0m
+[0;32m    vm1: Adding debian:SZAFIR_ROOT_CA2.pem[0m
+[0;32m    vm1: Adding debian:AffirmTrust_Premium_ECC.pem[0m
+[0;32m    vm1: Adding debian:Secure_Global_CA.pem[0m
+[0;32m    vm1: Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem[0m
+[0;32m    vm1: Adding debian:DigiCert_Assured_ID_Root_G2.pem[0m
+[0;32m    vm1: Adding debian:COMODO_Certification_Authority.pem[0m
+[0;32m    vm1: Adding debian:ePKI_Root_Certification_Authority.pem[0m
+[0;32m    vm1: Adding debian:XRamp_Global_CA_Root.pem[0m
+[0;32m    vm1: Adding debian:D-TRUST_EV_Root_CA_1_2020.pem[0m
+[0;32m    vm1: Adding debian:HARICA_TLS_ECC_Root_CA_2021.pem[0m
+[0;32m    vm1: Adding debian:AffirmTrust_Commercial.pem[0m
+[0;32m    vm1: Adding debian:COMODO_RSA_Certification_Authority.pem[0m
+[0;32m    vm1: Adding debian:TWCA_Global_Root_CA.pem[0m
+[0;32m    vm1: Adding debian:Certum_Trusted_Network_CA.pem[0m
+[0;32m    vm1: Adding debian:Security_Communication_RootCA2.pem[0m
+[0;32m    vm1: Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem[0m
+[0;32m    vm1: Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068_2.pem[0m
+[0;32m    vm1: Adding debian:GLOBALTRUST_2020.pem[0m
+[0;32m    vm1: Adding debian:emSign_ECC_Root_CA_-_G3.pem[0m
+[0;32m    vm1: Adding debian:Entrust_Root_Certification_Authority.pem[0m
+[0;32m    vm1: Adding debian:UCA_Global_G2_Root.pem[0m
+[0;32m    vm1: Adding debian:DigiCert_Global_Root_G3.pem[0m
+[0;32m    vm1: Adding debian:Amazon_Root_CA_3.pem[0m
+[0;32m    vm1: Adding debian:T-TeleSec_GlobalRoot_Class_3.pem[0m
+[0;32m    vm1: Adding debian:GTS_Root_R1.pem[0m
+[0;32m    vm1: Adding debian:Certum_EC-384_CA.pem[0m
+[0;32m    vm1: Adding debian:ANF_Secure_Server_Root_CA.pem[0m
+[0;32m    vm1: Adding debian:GTS_Root_R3.pem[0m
+[0;32m    vm1: Adding debian:ACCVRAIZ1.pem[0m
+[0;32m    vm1: Adding debian:E-Tugra_Certification_Authority.pem[0m
+[0;32m    vm1: Adding debian:Baltimore_CyberTrust_Root.pem[0m
+[0;32m    vm1: Adding debian:GTS_Root_R2.pem[0m
+[0;32m    vm1: Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem[0m
+[0;32m    vm1: Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem[0m
+[0;32m    vm1: Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem[0m
+[0;32m    vm1: Adding debian:TWCA_Root_Certification_Authority.pem[0m
+[0;32m    vm1: done.[0m
+[0;32m    vm1: Processing triggers for mime-support (3.64ubuntu1) ...[0m
+[0;32m    vm1: Processing triggers for libc-bin (2.31-0ubuntu9.12) ...[0m
+[0;32m    vm1: Processing triggers for systemd (245.4-4ubuntu3.22) ...[0m
+[0;32m    vm1: Processing triggers for man-db (2.9.1-1) ...[0m
+[0;32m    vm1: Processing triggers for ca-certificates (20230311ubuntu0.20.04.1) ...[0m
+[0;32m    vm1: Updating certificates in /etc/ssl/certs...[0m
+[0;32m    vm1: 0 added, 0 removed; done.[0m
+[0;32m    vm1: Running hooks in /etc/ca-certificates/update.d...[0m
+[0;32m    vm1: [0m
+[0;32m    vm1: done.[0m
+[0;32m    vm1: done.[0m
+[0;31m    vm1: openjdk version "11.0.20.1" 2023-08-24[0m
+[0;31m    vm1: OpenJDK Runtime Environment (build 11.0.20.1+1-post-Ubuntu-0ubuntu120.04)[0m
+[0;31m    vm1: OpenJDK 64-Bit Server VM (build 11.0.20.1+1-post-Ubuntu-0ubuntu120.04, mixed mode, sharing)[0m
+[0;31m    vm1: [0m
+[0;31m    vm1: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.[0m
+[0;31m    vm1: [0m
+[0;32m    vm1: Reading package lists...[0m
+[0;32m    vm1: Building dependency tree...[0m
+[0;32m    vm1: Reading state information...[0m
+[0;32m    vm1: The following additional packages will be installed:[0m
+[0;32m    vm1:   default-jdk-headless libice-dev libpthread-stubs0-dev libsm-dev libx11-dev[0m
+[0;32m    vm1:   libxau-dev libxcb1-dev libxdmcp-dev libxt-dev openjdk-11-jdk[0m
+[0;32m    vm1:   openjdk-11-jdk-headless x11proto-core-dev x11proto-dev xorg-sgml-doctools[0m
+[0;32m    vm1:   xtrans-dev[0m
+[0;32m    vm1: Suggested packages:[0m
+[0;32m    vm1:   libice-doc libsm-doc libx11-doc libxcb-doc libxt-doc openjdk-11-demo[0m
+[0;32m    vm1:   openjdk-11-source visualvm[0m
+[0;32m    vm1: The following NEW packages will be installed:[0m
+[0;32m    vm1:   default-jdk default-jdk-headless libice-dev libpthread-stubs0-dev libsm-dev[0m
+[0;32m    vm1:   libx11-dev libxau-dev libxcb1-dev libxdmcp-dev libxt-dev openjdk-11-jdk[0m
+[0;32m    vm1:   openjdk-11-jdk-headless x11proto-core-dev x11proto-dev xorg-sgml-doctools[0m
+[0;32m    vm1:   xtrans-dev[0m
+[0;32m    vm1: 0 upgraded, 16 newly installed, 0 to remove and 13 not upgraded.[0m
+[0;32m    vm1: Need to get 76.9 MB of archives.[0m
+[0;32m    vm1: After this operation, 90.6 MB of additional disk space will be used.[0m
+[0;32m    vm1: Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openjdk-11-jdk-headless amd64 11.0.20.1+1-0ubuntu1~20.04 [73.6 MB][0m
+[0;32m    vm1: Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 default-jdk-headless amd64 2:1.11-72 [1140 B][0m
+[0;32m    vm1: Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openjdk-11-jdk amd64 11.0.20.1+1-0ubuntu1~20.04 [1327 kB][0m
+[0;32m    vm1: Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 default-jdk amd64 2:1.11-72 [1096 B][0m
+[0;32m    vm1: Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 xorg-sgml-doctools all 1:1.11-1 [12.9 kB][0m
+[0;32m    vm1: Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 x11proto-dev all 2019.2-1ubuntu1 [594 kB][0m
+[0;32m    vm1: Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 x11proto-core-dev all 2019.2-1ubuntu1 [2620 B][0m
+[0;32m    vm1: Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libice-dev amd64 2:1.0.10-0ubuntu1 [47.8 kB][0m
+[0;32m    vm1: Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 libpthread-stubs0-dev amd64 0.4-1 [5384 B][0m
+[0;32m    vm1: Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 libsm-dev amd64 2:1.2.3-1 [17.0 kB][0m
+[0;32m    vm1: Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 libxau-dev amd64 1:1.0.9-0ubuntu1 [9552 B][0m
+[0;32m    vm1: Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 libxdmcp-dev amd64 1:1.1.3-0ubuntu1 [25.3 kB][0m
+[0;32m    vm1: Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 xtrans-dev all 1.4.0-1 [68.9 kB][0m
+[0;32m    vm1: Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb1-dev amd64 1.14-2 [80.5 kB][0m
+[0;32m    vm1: Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libx11-dev amd64 2:1.6.9-2ubuntu1.6 [648 kB][0m
+[0;32m    vm1: Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 libxt-dev amd64 1:1.1.5-1 [395 kB][0m
+[0;31m    vm1: dpkg-preconfigure: unable to re-open stdin: No such file or directory[0m
+[0;32m    vm1: Fetched 76.9 MB in 10s (7811 kB/s)[0m
+[0;32m    vm1: Selecting previously unselected package openjdk-11-jdk-headless:amd64.[0m
+[0;32m    vm1: (Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 64746 files and directories currently installed.)[0m
+[0;32m    vm1: Preparing to unpack .../00-openjdk-11-jdk-headless_11.0.20.1+1-0ubuntu1~20.04_amd64.deb ...[0m
+[0;32m    vm1: Unpacking openjdk-11-jdk-headless:amd64 (11.0.20.1+1-0ubuntu1~20.04) ...[0m
+[0;32m    vm1: Selecting previously unselected package default-jdk-headless.[0m
+[0;32m    vm1: Preparing to unpack .../01-default-jdk-headless_2%3a1.11-72_amd64.deb ...[0m
+[0;32m    vm1: Unpacking default-jdk-headless (2:1.11-72) ...[0m
+[0;32m    vm1: Selecting previously unselected package openjdk-11-jdk:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../02-openjdk-11-jdk_11.0.20.1+1-0ubuntu1~20.04_amd64.deb ...[0m
+[0;32m    vm1: Unpacking openjdk-11-jdk:amd64 (11.0.20.1+1-0ubuntu1~20.04) ...[0m
+[0;32m    vm1: Selecting previously unselected package default-jdk.[0m
+[0;32m    vm1: Preparing to unpack .../03-default-jdk_2%3a1.11-72_amd64.deb ...[0m
+[0;32m    vm1: Unpacking default-jdk (2:1.11-72) ...[0m
+[0;32m    vm1: Selecting previously unselected package xorg-sgml-doctools.[0m
+[0;32m    vm1: Preparing to unpack .../04-xorg-sgml-doctools_1%3a1.11-1_all.deb ...[0m
+[0;32m    vm1: Unpacking xorg-sgml-doctools (1:1.11-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package x11proto-dev.[0m
+[0;32m    vm1: Preparing to unpack .../05-x11proto-dev_2019.2-1ubuntu1_all.deb ...[0m
+[0;32m    vm1: Unpacking x11proto-dev (2019.2-1ubuntu1) ...[0m
+[0;32m    vm1: Selecting previously unselected package x11proto-core-dev.[0m
+[0;32m    vm1: Preparing to unpack .../06-x11proto-core-dev_2019.2-1ubuntu1_all.deb ...[0m
+[0;32m    vm1: Unpacking x11proto-core-dev (2019.2-1ubuntu1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libice-dev:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../07-libice-dev_2%3a1.0.10-0ubuntu1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libice-dev:amd64 (2:1.0.10-0ubuntu1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libpthread-stubs0-dev:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../08-libpthread-stubs0-dev_0.4-1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libpthread-stubs0-dev:amd64 (0.4-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libsm-dev:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../09-libsm-dev_2%3a1.2.3-1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libsm-dev:amd64 (2:1.2.3-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxau-dev:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../10-libxau-dev_1%3a1.0.9-0ubuntu1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxau-dev:amd64 (1:1.0.9-0ubuntu1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxdmcp-dev:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../11-libxdmcp-dev_1%3a1.1.3-0ubuntu1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxdmcp-dev:amd64 (1:1.1.3-0ubuntu1) ...[0m
+[0;32m    vm1: Selecting previously unselected package xtrans-dev.[0m
+[0;32m    vm1: Preparing to unpack .../12-xtrans-dev_1.4.0-1_all.deb ...[0m
+[0;32m    vm1: Unpacking xtrans-dev (1.4.0-1) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxcb1-dev:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../13-libxcb1-dev_1.14-2_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxcb1-dev:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Selecting previously unselected package libx11-dev:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../14-libx11-dev_2%3a1.6.9-2ubuntu1.6_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libx11-dev:amd64 (2:1.6.9-2ubuntu1.6) ...[0m
+[0;32m    vm1: Selecting previously unselected package libxt-dev:amd64.[0m
+[0;32m    vm1: Preparing to unpack .../15-libxt-dev_1%3a1.1.5-1_amd64.deb ...[0m
+[0;32m    vm1: Unpacking libxt-dev:amd64 (1:1.1.5-1) ...[0m
+[0;32m    vm1: Setting up openjdk-11-jdk-headless:amd64 (11.0.20.1+1-0ubuntu1~20.04) ...[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jar to provide /usr/bin/jar (jar) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/javap to provide /usr/bin/javap (javap) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jcmd to provide /usr/bin/jcmd (jcmd) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jdeprscan to provide /usr/bin/jdeprscan (jdeprscan) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jdeps to provide /usr/bin/jdeps (jdeps) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jfr to provide /usr/bin/jfr (jfr) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jimage to provide /usr/bin/jimage (jimage) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jlink to provide /usr/bin/jlink (jlink) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jmod to provide /usr/bin/jmod (jmod) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jps to provide /usr/bin/jps (jps) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jshell to provide /usr/bin/jshell (jshell) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/rmic to provide /usr/bin/rmic (rmic) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jaotc to provide /usr/bin/jaotc (jaotc) in auto mode[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jhsdb to provide /usr/bin/jhsdb (jhsdb) in auto mode[0m
+[0;32m    vm1: Setting up libpthread-stubs0-dev:amd64 (0.4-1) ...[0m
+[0;32m    vm1: Setting up xtrans-dev (1.4.0-1) ...[0m
+[0;32m    vm1: Setting up default-jdk-headless (2:1.11-72) ...[0m
+[0;32m    vm1: Setting up openjdk-11-jdk:amd64 (11.0.20.1+1-0ubuntu1~20.04) ...[0m
+[0;32m    vm1: update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jconsole to provide /usr/bin/jconsole (jconsole) in auto mode[0m
+[0;32m    vm1: Setting up xorg-sgml-doctools (1:1.11-1) ...[0m
+[0;32m    vm1: Setting up x11proto-dev (2019.2-1ubuntu1) ...[0m
+[0;32m    vm1: Setting up libxau-dev:amd64 (1:1.0.9-0ubuntu1) ...[0m
+[0;32m    vm1: Setting up libice-dev:amd64 (2:1.0.10-0ubuntu1) ...[0m
+[0;32m    vm1: Setting up libsm-dev:amd64 (2:1.2.3-1) ...[0m
+[0;32m    vm1: Setting up default-jdk (2:1.11-72) ...[0m
+[0;32m    vm1: Setting up libxdmcp-dev:amd64 (1:1.1.3-0ubuntu1) ...[0m
+[0;32m    vm1: Setting up x11proto-core-dev (2019.2-1ubuntu1) ...[0m
+[0;32m    vm1: Setting up libxcb1-dev:amd64 (1.14-2) ...[0m
+[0;32m    vm1: Setting up libx11-dev:amd64 (2:1.6.9-2ubuntu1.6) ...[0m
+[0;32m    vm1: Setting up libxt-dev:amd64 (1:1.1.5-1) ...[0m
+[0;32m    vm1: Processing triggers for man-db (2.9.1-1) ...[0m
+[0;32m    vm1: javac 11.0.20.1[0m
+[0;32m    vm1: Java installation finished[0m
+[1m==> vm2: Importing base box 'ubuntu/focal64'...[0m
+[0m
+[K[0m[0mProgress: 90%[0m[0m
+[K[0m[1m==> vm2: Matching MAC address for NAT networking...[0m
+[1m==> vm2: Checking if box 'ubuntu/focal64' version '20231011.0.0' is up to date...[0m
+[1m==> vm2: Setting the name of the VM: vm2[0m
+[1m==> vm2: Fixed port collision for 22 => 2222. Now on port 2200.[0m
+[1m==> vm2: Clearing any previously set network interfaces...[0m
+[1m==> vm2: Preparing network interfaces based on configuration...[0m
+[0m    vm2: Adapter 1: nat[0m
+[0m    vm2: Adapter 2: bridged[0m
+[1m==> vm2: Forwarding ports...[0m
+[0m    vm2: 81 (guest) => 8081 (host) (adapter 1)[0m
+[0m    vm2: 22 (guest) => 2200 (host) (adapter 1)[0m
+[1m==> vm2: Running 'pre-boot' VM customizations...[0m
+[1m==> vm2: Booting VM...[0m
+[1m==> vm2: Waiting for machine to boot. This may take a few minutes...[0m
+[0m    vm2: SSH address: 127.0.0.1:2200[0m
+[0m    vm2: SSH username: vagrant[0m
+[0m    vm2: SSH auth method: private key[0m
+[0m    vm2: 
+    vm2: Vagrant insecure key detected. Vagrant will automatically replace
+    vm2: this with a newly generated keypair for better security.[0m
+[0m    vm2: 
+    vm2: Inserting generated public key within guest...[0m
+[0m    vm2: Removing insecure key from the guest if it's present...[0m
+[0m    vm2: Key inserted! Disconnecting and reconnecting using new SSH key...[0m
+[1m==> vm2: Machine booted and ready![0m
+[1m==> vm2: Checking for guest additions in VM...[0m
+[1m==> vm2: Configuring and enabling network interfaces...[0m
+[1m==> vm2: Mounting shared folders...[0m
+[0m    vm2: /vagrant => /home/ruslan/IT-2023/task_2/task_2.2/vagrant[0m
+[1m==> vm2: Running provisioner: shell...[0m
+[0m    vm2: Running: /tmp/vagrant-shell20231028-11902-frbrm.sh[0m
+[0;32m    vm2: Installing postgresql-12[0m
+[0;31m    vm2: Warning: apt-key output should not be parsed (stdout is not a terminal)[0m
+[0;32m    vm2: OK[0m
+[0;32m    vm2: Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB][0m
+[0;32m    vm2: Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease[0m
+[0;32m    vm2: Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB][0m
+[0;32m    vm2: Get:4 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2535 kB][0m
+[0;32m    vm2: Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB][0m
+[0;32m    vm2: Get:6 https://apt.postgresql.org/pub/repos/apt focal-pgdg InRelease [123 kB][0m
+[0;32m    vm2: Get:7 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB][0m
+[0;32m    vm2: Get:8 https://apt.postgresql.org/pub/repos/apt focal-pgdg/main amd64 Packages [291 kB][0m
+[0;32m    vm2: Get:9 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [394 kB][0m
+[0;32m    vm2: Get:10 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [13.2 kB][0m
+[0;32m    vm2: Get:11 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [2315 kB][0m
+[0;32m    vm2: Get:12 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [324 kB][0m
+[0;32m    vm2: Get:13 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [572 B][0m
+[0;32m    vm2: Get:14 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [894 kB][0m
+[0;32m    vm2: Get:15 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [187 kB][0m
+[0;32m    vm2: Get:16 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [19.2 kB][0m
+[0;32m    vm2: Get:17 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [23.6 kB][0m
+[0;32m    vm2: Get:18 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [5504 B][0m
+[0;32m    vm2: Get:19 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [548 B][0m
+[0;32m    vm2: Get:20 http://archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB][0m
+[0;32m    vm2: Get:21 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB][0m
+[0;32m    vm2: Get:22 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB][0m
+[0;32m    vm2: Get:23 http://archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB][0m
+[0;32m    vm2: Get:24 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B][0m
+[0;32m    vm2: Get:25 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [2937 kB][0m
+[0;32m    vm2: Get:26 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [477 kB][0m
+[0;32m    vm2: Get:27 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [17.2 kB][0m
+[0;32m    vm2: Get:28 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [2433 kB][0m
+[0;32m    vm2: Get:29 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [341 kB][0m
+[0;32m    vm2: Get:30 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [568 B][0m
+[0;32m    vm2: Get:31 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1126 kB][0m
+[0;32m    vm2: Get:32 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [268 kB][0m
+[0;32m    vm2: Get:33 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [25.6 kB][0m
+[0;32m    vm2: Get:34 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [25.8 kB][0m
+[0;32m    vm2: Get:35 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [7484 B][0m
+[0;32m    vm2: Get:36 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [620 B][0m
+[0;32m    vm2: Get:37 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [45.7 kB][0m
+[0;32m    vm2: Get:38 http://archive.ubuntu.com/ubuntu focal-backports/main Translation-en [16.3 kB][0m
+[0;32m    vm2: Get:39 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1420 B][0m
+[0;32m    vm2: Get:40 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B][0m
+[0;32m    vm2: Get:41 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [25.0 kB][0m
+[0;32m    vm2: Get:42 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [16.3 kB][0m
+[0;32m    vm2: Get:43 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B][0m
+[0;32m    vm2: Get:44 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B][0m
+[0;32m    vm2: Fetched 29.5 MB in 5s (5679 kB/s)[0m
+[0;32m    vm2: Reading package lists...[0m
+[0;32m    vm2: Reading package lists...[0m
+[0;32m    vm2: Building dependency tree...[0m
+[0;32m    vm2: Reading state information...[0m
+[0;32m    vm2: The following additional packages will be installed:[0m
+[0;32m    vm2:   libcommon-sense-perl libjson-perl libjson-xs-perl libllvm10 libpq5[0m
+[0;32m    vm2:   libsensors-config libsensors5 libtypes-serialiser-perl postgresql-client-12[0m
+[0;32m    vm2:   postgresql-client-common postgresql-common ssl-cert sysstat[0m
+[0;32m    vm2: Suggested packages:[0m
+[0;32m    vm2:   lm-sensors postgresql-doc-12 openssl-blacklist isag[0m
+[0;32m    vm2: The following NEW packages will be installed:[0m
+[0;32m    vm2:   libcommon-sense-perl libjson-perl libjson-xs-perl libllvm10 libpq5[0m
+[0;32m    vm2:   libsensors-config libsensors5 libtypes-serialiser-perl postgresql-12[0m
+[0;32m    vm2:   postgresql-client-12 postgresql-client-common postgresql-common ssl-cert[0m
+[0;32m    vm2:   sysstat[0m
+[0;32m    vm2: 0 upgraded, 14 newly installed, 0 to remove and 13 not upgraded.[0m
+[0;32m    vm2: Need to get 32.9 MB of archives.[0m
+[0;32m    vm2: After this operation, 134 MB of additional disk space will be used.[0m
+[0;32m    vm2: Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libjson-perl all 4.02000-2 [80.9 kB][0m
+[0;32m    vm2: Get:2 https://apt.postgresql.org/pub/repos/apt focal-pgdg/main amd64 postgresql-client-common all 255.pgdg20.04+1 [93.8 kB][0m
+[0;32m    vm2: Get:3 https://apt.postgresql.org/pub/repos/apt focal-pgdg/main amd64 postgresql-common all 255.pgdg20.04+1 [237 kB][0m
+[0;32m    vm2: Get:4 https://apt.postgresql.org/pub/repos/apt focal-pgdg/main amd64 libpq5 amd64 16.0-1.pgdg20.04+1 [212 kB][0m
+[0;32m    vm2: Get:5 https://apt.postgresql.org/pub/repos/apt focal-pgdg/main amd64 postgresql-client-12 amd64 12.16-1.pgdg20.04+1 [1430 kB][0m
+[0;32m    vm2: Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 ssl-cert all 1.0.39 [17.0 kB][0m
+[0;32m    vm2: Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 libcommon-sense-perl amd64 3.74-2build6 [20.1 kB][0m
+[0;32m    vm2: Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libtypes-serialiser-perl all 1.0-1 [12.1 kB][0m
+[0;32m    vm2: Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 libjson-xs-perl amd64 4.020-1build1 [83.7 kB][0m
+[0;32m    vm2: Get:10 https://apt.postgresql.org/pub/repos/apt focal-pgdg/main amd64 postgresql-12 amd64 12.16-1.pgdg20.04+1 [14.9 MB][0m
+[0;32m    vm2: Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 libllvm10 amd64 1:10.0.0-4ubuntu1 [15.3 MB][0m
+[0;32m    vm2: Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsensors-config all 1:3.6.0-2ubuntu1.1 [6052 B][0m
+[0;32m    vm2: Get:13 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsensors5 amd64 1:3.6.0-2ubuntu1.1 [27.2 kB][0m
+[0;32m    vm2: Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 sysstat amd64 12.2.0-2ubuntu0.3 [448 kB][0m
+[0;31m    vm2: dpkg-preconfigure: unable to re-open stdin: No such file or directory[0m
+[0;32m    vm2: Fetched 32.9 MB in 5s (7213 kB/s)[0m
+[0;32m    vm2: Selecting previously unselected package libjson-perl.[0m
+[0;32m    vm2: (Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 63743 files and directories currently installed.)[0m
+[0;32m    vm2: Preparing to unpack .../00-libjson-perl_4.02000-2_all.deb ...[0m
+[0;32m    vm2: Unpacking libjson-perl (4.02000-2) ...[0m
+[0;32m    vm2: Selecting previously unselected package postgresql-client-common.[0m
+[0;32m    vm2: Preparing to unpack .../01-postgresql-client-common_255.pgdg20.04+1_all.deb ...[0m
+[0;32m    vm2: Unpacking postgresql-client-common (255.pgdg20.04+1) ...[0m
+[0;32m    vm2: Selecting previously unselected package ssl-cert.[0m
+[0;32m    vm2: Preparing to unpack .../02-ssl-cert_1.0.39_all.deb ...[0m
+[0;32m    vm2: Unpacking ssl-cert (1.0.39) ...[0m
+[0;32m    vm2: Selecting previously unselected package postgresql-common.[0m
+[0;32m    vm2: Preparing to unpack .../03-postgresql-common_255.pgdg20.04+1_all.deb ...[0m
+[0;32m    vm2: Adding 'diversion of /usr/bin/pg_config to /usr/bin/pg_config.libpq-dev by postgresql-common'[0m
+[0;32m    vm2: Unpacking postgresql-common (255.pgdg20.04+1) ...[0m
+[0;32m    vm2: Selecting previously unselected package libcommon-sense-perl.[0m
+[0;32m    vm2: Preparing to unpack .../04-libcommon-sense-perl_3.74-2build6_amd64.deb ...[0m
+[0;32m    vm2: Unpacking libcommon-sense-perl (3.74-2build6) ...[0m
+[0;32m    vm2: Selecting previously unselected package libtypes-serialiser-perl.[0m
+[0;32m    vm2: Preparing to unpack .../05-libtypes-serialiser-perl_1.0-1_all.deb ...[0m
+[0;32m    vm2: Unpacking libtypes-serialiser-perl (1.0-1) ...[0m
+[0;32m    vm2: Selecting previously unselected package libjson-xs-perl.[0m
+[0;32m    vm2: Preparing to unpack .../06-libjson-xs-perl_4.020-1build1_amd64.deb ...[0m
+[0;32m    vm2: Unpacking libjson-xs-perl (4.020-1build1) ...[0m
+[0;32m    vm2: Selecting previously unselected package libllvm10:amd64.[0m
+[0;32m    vm2: Preparing to unpack .../07-libllvm10_1%3a10.0.0-4ubuntu1_amd64.deb ...[0m
+[0;32m    vm2: Unpacking libllvm10:amd64 (1:10.0.0-4ubuntu1) ...[0m
+[0;32m    vm2: Selecting previously unselected package libpq5:amd64.[0m
+[0;32m    vm2: Preparing to unpack .../08-libpq5_16.0-1.pgdg20.04+1_amd64.deb ...[0m
+[0;32m    vm2: Unpacking libpq5:amd64 (16.0-1.pgdg20.04+1) ...[0m
+[0;32m    vm2: Selecting previously unselected package libsensors-config.[0m
+[0;32m    vm2: Preparing to unpack .../09-libsensors-config_1%3a3.6.0-2ubuntu1.1_all.deb ...[0m
+[0;32m    vm2: Unpacking libsensors-config (1:3.6.0-2ubuntu1.1) ...[0m
+[0;32m    vm2: Selecting previously unselected package libsensors5:amd64.[0m
+[0;32m    vm2: Preparing to unpack .../10-libsensors5_1%3a3.6.0-2ubuntu1.1_amd64.deb ...[0m
+[0;32m    vm2: Unpacking libsensors5:amd64 (1:3.6.0-2ubuntu1.1) ...[0m
+[0;32m    vm2: Selecting previously unselected package postgresql-client-12.[0m
+[0;32m    vm2: Preparing to unpack .../11-postgresql-client-12_12.16-1.pgdg20.04+1_amd64.deb ...[0m
+[0;32m    vm2: Unpacking postgresql-client-12 (12.16-1.pgdg20.04+1) ...[0m
+[0;32m    vm2: Selecting previously unselected package postgresql-12.[0m
+[0;32m    vm2: Preparing to unpack .../12-postgresql-12_12.16-1.pgdg20.04+1_amd64.deb ...[0m
+[0;32m    vm2: Unpacking postgresql-12 (12.16-1.pgdg20.04+1) ...[0m
+[0;32m    vm2: Selecting previously unselected package sysstat.[0m
+[0;32m    vm2: Preparing to unpack .../13-sysstat_12.2.0-2ubuntu0.3_amd64.deb ...[0m
+[0;32m    vm2: Unpacking sysstat (12.2.0-2ubuntu0.3) ...[0m
+[0;32m    vm2: Setting up postgresql-client-common (255.pgdg20.04+1) ...[0m
+[0;32m    vm2: Setting up libsensors-config (1:3.6.0-2ubuntu1.1) ...[0m
+[0;32m    vm2: Setting up libpq5:amd64 (16.0-1.pgdg20.04+1) ...[0m
+[0;32m    vm2: Setting up libcommon-sense-perl (3.74-2build6) ...[0m
+[0;32m    vm2: Setting up libllvm10:amd64 (1:10.0.0-4ubuntu1) ...[0m
+[0;32m    vm2: Setting up postgresql-client-12 (12.16-1.pgdg20.04+1) ...[0m
+[0;32m    vm2: update-alternatives: using /usr/share/postgresql/12/man/man1/psql.1.gz to provide /usr/share/man/man1/psql.1.gz (psql.1.gz) in auto mode[0m
+[0;32m    vm2: Setting up ssl-cert (1.0.39) ...[0m
+[0;32m    vm2: Setting up libsensors5:amd64 (1:3.6.0-2ubuntu1.1) ...[0m
+[0;32m    vm2: Setting up libtypes-serialiser-perl (1.0-1) ...[0m
+[0;32m    vm2: Setting up libjson-perl (4.02000-2) ...[0m
+[0;32m    vm2: Setting up sysstat (12.2.0-2ubuntu0.3) ...[0m
+[0;32m    vm2: [0m
+[0;32m    vm2: Creating config file /etc/default/sysstat with new version[0m
+[0;32m    vm2: update-alternatives: using /usr/bin/sar.sysstat to provide /usr/bin/sar (sar) in auto mode[0m
+[0;32m    vm2: Created symlink /etc/systemd/system/multi-user.target.wants/sysstat.service → /lib/systemd/system/sysstat.service.[0m
+[0;32m    vm2: Setting up libjson-xs-perl (4.020-1build1) ...[0m
+[0;32m    vm2: Setting up postgresql-common (255.pgdg20.04+1) ...[0m
+[0;32m    vm2: Adding user postgres to group ssl-cert[0m
+[0;32m    vm2: [0m
+[0;32m    vm2: Creating config file /etc/postgresql-common/createcluster.conf with new version[0m
+[0;32m    vm2: Building PostgreSQL dictionaries from installed myspell/hunspell packages...[0m
+[0;32m    vm2: Removing obsolete dictionary files:[0m
+[0;32m    vm2: '/etc/apt/trusted.gpg.d/apt.postgresql.org.gpg' -> '/usr/share/postgresql-common/pgdg/apt.postgresql.org.gpg'[0m
+[0;32m    vm2: Created symlink /etc/systemd/system/multi-user.target.wants/postgresql.service → /lib/systemd/system/postgresql.service.[0m
+[0;32m    vm2: Setting up postgresql-12 (12.16-1.pgdg20.04+1) ...[0m
+[0;32m    vm2: Creating new PostgreSQL cluster 12/main ...[0m
+[0;32m    vm2: /usr/lib/postgresql/12/bin/initdb -D /var/lib/postgresql/12/main --auth-local peer --auth-host md5[0m
+[0;32m    vm2: The files belonging to this database system will be owned by user "postgres".[0m
+[0;32m    vm2: This user must also own the server process.[0m
+[0;32m    vm2: [0m
+[0;32m    vm2: The database cluster will be initialized with locale "C.UTF-8".[0m
+[0;32m    vm2: The default database encoding has accordingly been set to "UTF8".[0m
+[0;32m    vm2: The default text search configuration will be set to "english".[0m
+[0;32m    vm2: [0m
+[0;32m    vm2: Data page checksums are disabled.[0m
+[0;32m    vm2: [0m
+[0;32m    vm2: fixing permissions on existing directory /var/lib/postgresql/12/main ... ok[0m
+[0;32m    vm2: creating subdirectories ... ok[0m
+[0;32m    vm2: selecting dynamic shared memory implementation ... posix[0m
+[0;32m    vm2: selecting default max_connections ... 100[0m
+[0;32m    vm2: selecting default shared_buffers ... 128MB[0m
+[0;32m    vm2: selecting default time zone ... Etc/UTC[0m
+[0;32m    vm2: creating configuration files ... ok[0m
+[0;32m    vm2: running bootstrap script ... ok[0m
+[0;32m    vm2: performing post-bootstrap initialization ... ok[0m
+[0;32m    vm2: syncing data to disk ... ok[0m
+[0;32m    vm2: [0m
+[0;32m    vm2: Success. You can now start the database server using:[0m
+[0;32m    vm2: [0m
+[0;32m    vm2:     pg_ctlcluster 12 main start[0m
+[0;32m    vm2: [0m
+[0;32m    vm2: Processing triggers for systemd (245.4-4ubuntu3.22) ...[0m
+[0;32m    vm2: Processing triggers for man-db (2.9.1-1) ...[0m
+[0;32m    vm2: Processing triggers for libc-bin (2.31-0ubuntu9.12) ...[0m
+[0;32m    vm2: Installation finished[0m
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.2/vagrant [01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.2/vagrant[00m$ vagrant status
+[?2004l
+[0mCurrent machine states:
+
+vm1                       running (virtualbox)
+vm2                       running (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.[0m
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.2/vagrant [01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.2/vagrant[00m$ vagrant ssh vm1
+[?2004l
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-164-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat Oct 28 15:11:55 UTC 2023
+
+  System load:  0.79              Processes:               127
+  Usage of /:   5.2% of 38.70GB   Users logged in:         0
+  Memory usage: 12%               IPv4 address for enp0s3: 10.0.2.15
+  Swap usage:   0%                IPv4 address for enp0s8: 192.168.1.10
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+17 updates can be applied immediately.
+15 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+New release '22.04.3 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+]0;vagrant@ubuntu-focal: ~ [01;32mvagrant@ubuntu-focal[00m:[01;34m~[00m$ ping google.com
+PING google.com (74.125.131.100) 56(84) bytes of data.
+64 bytes from lu-in-f100.1e100.net (74.125.131.100): icmp_seq=1 ttl=63 time=38.8 ms
+64 bytes from lu-in-f100.1e100.net (74.125.131.100): icmp_seq=2 ttl=63 time=34.7 ms
+64 bytes from lu-in-f100.1e100.net (74.125.131.100): icmp_seq=3 ttl=63 time=39.4 ms
+64 bytes from lu-in-f100.1e100.net (74.125.131.100): icmp_seq=4 ttl=63 time=40.4 ms
+64 bytes from lu-in-f100.1e100.net (74.125.131.100): icmp_seq=5 ttl=63 time=37.4 ms
+64 bytes from lu-in-f100.1e100.net (74.125.131.100): icmp_seq=6 ttl=63 time=38.9 ms
+^C
+--- google.com ping statistics ---
+6 packets transmitted, 6 received, 0% packet loss, time 5175ms
+rtt min/avg/max/mdev = 34.742/38.269/40.435/1.820 ms
+]0;vagrant@ubuntu-focal: ~ [01;32mvagrant@ubuntu-focal[00m:[01;34m~[00m$ ping 192.168.1.11
+PING 192.168.1.11 (192.168.1.11) 56(84) bytes of data.
+64 bytes from 192.168.1.11: icmp_seq=1 ttl=64 time=1.14 ms
+64 bytes from 192.168.1.11: icmp_seq=2 ttl=64 time=0.888 ms
+64 bytes from 192.168.1.11: icmp_seq=3 ttl=64 time=0.801 ms
+64 bytes from 192.168.1.11: icmp_seq=4 ttl=64 time=0.716 ms
+64 bytes from 192.168.1.11: icmp_seq=5 ttl=64 time=0.597 ms
+64 bytes from 192.168.1.11: icmp_seq=6 ttl=64 time=0.264 ms
+^C
+--- 192.168.1.11 ping statistics ---
+6 packets transmitted, 6 received, 0% packet loss, time 5056ms
+rtt min/avg/max/mdev = 0.264/0.733/1.137/0.267 ms
+]0;vagrant@ubuntu-focal: ~ [01;32mvagrant@ubuntu-focal[00m:[01;34m~[00m$ java -version
+openjdk version "11.0.20.1" 2023-08-24
+OpenJDK Runtime Environment (build 11.0.20.1+1-post-Ubuntu-0ubuntu120.04)
+OpenJDK 64-Bit Server VM (build 11.0.20.1+1-post-Ubuntu-0ubuntu120.04, mixed mode, sharing)
+]0;vagrant@ubuntu-focal: ~ [01;32mvagrant@ubuntu-focal[00m:[01;34m~[00m$ java -versionc -version
+javac 11.0.20.1
+]0;vagrant@ubuntu-focal: ~ [01;32mvagrant@ubuntu-focal[00m:[01;34m~[00m$ logout
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.2/vagrant [01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.2/vagrant[00m$ vagrant ssh vm1[1Ptatussh vm1[K2
+[?2004l
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-164-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat Oct 28 15:14:28 UTC 2023
+
+  System load:  0.0               Processes:               152
+  Usage of /:   4.6% of 38.70GB   Users logged in:         0
+  Memory usage: 6%                IPv4 address for enp0s3: 10.0.2.15
+  Swap usage:   0%                IPv4 address for enp0s8: 192.168.1.11
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+17 updates can be applied immediately.
+15 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+New release '22.04.3 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+]0;vagrant@ubuntu-focal: ~ [01;32mvagrant@ubuntu-focal[00m:[01;34m~[00m$ ping google.com
+PING google.com (74.125.131.101) 56(84) bytes of data.
+64 bytes from lu-in-f101.1e100.net (74.125.131.101): icmp_seq=1 ttl=63 time=41.0 ms
+64 bytes from lu-in-f101.1e100.net (74.125.131.101): icmp_seq=2 ttl=63 time=41.6 ms
+64 bytes from lu-in-f101.1e100.net (74.125.131.101): icmp_seq=3 ttl=63 time=43.1 ms
+64 bytes from lu-in-f101.1e100.net (74.125.131.101): icmp_seq=4 ttl=63 time=44.2 ms
+64 bytes from lu-in-f101.1e100.net (74.125.131.101): icmp_seq=5 ttl=63 time=42.6 ms
+^C
+--- google.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4016ms
+rtt min/avg/max/mdev = 40.993/42.494/44.231/1.145 ms
+]0;vagrant@ubuntu-focal: ~ [01;32mvagrant@ubuntu-focal[00m:[01;34m~[00m$ ping 192.168.1.10
+PING 192.168.1.10 (192.168.1.10) 56(84) bytes of data.
+64 bytes from 192.168.1.10: icmp_seq=1 ttl=64 time=0.780 ms
+64 bytes from 192.168.1.10: icmp_seq=2 ttl=64 time=0.854 ms
+64 bytes from 192.168.1.10: icmp_seq=3 ttl=64 time=0.675 ms
+64 bytes from 192.168.1.10: icmp_seq=4 ttl=64 time=1.06 ms
+64 bytes from 192.168.1.10: icmp_seq=5 ttl=64 time=0.279 ms
+64 bytes from 192.168.1.10: icmp_seq=6 ttl=64 time=0.925 ms
+^C
+--- 192.168.1.10 ping statistics ---
+6 packets transmitted, 6 received, 0% packet loss, time 5045ms
+rtt min/avg/max/mdev = 0.279/0.762/1.059/0.246 ms
+]0;vagrant@ubuntu-focal: ~ [01;32mvagrant@ubuntu-focal[00m:[01;34m~[00m$ pg_config --version
+PostgreSQL 12.16 (Ubuntu 12.16-1.pgdg20.04+1)
+]0;vagrant@ubuntu-focal: ~ [01;32mvagrant@ubuntu-focal[00m:[01;34m~[00m$ logout
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.2/vagrant [01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.2/vagrant[00m$ vagrant status
+[?2004l
+[0mCurrent machine states:
+
+vm1                       running (virtualbox)
+vm2                       running (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.[0m
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.2/vagrant [01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.2/vagrant[00m$ vagrant halt
+[?2004l
+[1m==> vm2: Attempting graceful shutdown of VM...[0m
+[1m==> vm1: Attempting graceful shutdown of VM...[0m
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.2/vagrant [01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.2/vagrant[00m$ vagrant haltstatus
+[?2004l
+[0mCurrent machine states:
+
+vm1                       poweroff (virtualbox)
+vm2                       poweroff (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.[0m
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.2/vagrant [01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.2/vagrant[00m$ vagrant destroy
+[?2004l
+[0m    vm2: Are you sure you want to destroy the 'vm2' VM? [y/N] [0my
+[1m==> vm2: Destroying VM and associated drives...[0m
+[0m    vm1: Are you sure you want to destroy the 'vm1' VM? [y/N] [0my
+[1m==> vm1: Destroying VM and associated drives...[0m
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.2/vagrant [01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.2/vagrant[00m$ vagrant status
+[?2004l
+[0mCurrent machine states:
+
+vm1                       not created (virtualbox)
+vm2                       not created (virtualbox)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.[0m
+[?2004h]0;ruslan@ruslan-Z690-UD: ~/IT-2023/task_2/task_2.2/vagrant [01;32mruslan@ruslan-Z690-UD[00m:[01;34m~/IT-2023/task_2/task_2.2/vagrant[00m$ exit
+[?2004l
+exit
+
+Script done on 2023-10-28 20:17:56+05:00 [COMMAND_EXIT_CODE="0"]
